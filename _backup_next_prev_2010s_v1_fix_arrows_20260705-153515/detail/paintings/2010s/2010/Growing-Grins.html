@@ -1,0 +1,718 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Growing Grins – Ron English Catalogue Raisonné</title>
+
+  <meta name="work-id" content="RE-000969" />
+
+  <link rel="stylesheet" href="../../../../css/styles.css" />
+
+  <style>
+    .hero-card,
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      margin: 0;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    }
+
+    .hero-card {
+      margin-bottom: 1.5rem;
+      padding: 0.95rem;
+    }
+
+    .hero-card img,
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .hero-card .work-hero {
+      margin: 0;
+    }
+
+    .ancillary-gallery.documentation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: start;
+      max-width: 920px;
+      margin-top: 0.85rem;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      display: grid;
+      grid-template-columns: minmax(150px, 230px) 1fr;
+      align-items: center;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      padding: 0.85rem;
+      text-decoration: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      width: 100%;
+      max-width: 210px;
+      max-height: 170px;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      display: block;
+      margin: 0;
+      padding: 0.95rem 1.05rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
+      display: inline;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .card-detail-text {
+      display: block;
+      margin-top: 0.35rem;
+    }
+
+    .card-source {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      opacity: 0.86;
+      line-height: 1.45;
+    }
+
+    .circulation-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.22rem;
+      margin-top: 0.65rem;
+    }
+
+    .circulation-link {
+      display: block;
+      padding: 0.08rem 0;
+      text-decoration: none;
+      line-height: 1.22;
+    }
+
+    .circulation-link:hover .circulation-title {
+      text-decoration: underline;
+    }
+
+    .circulation-title {
+      display: inline;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .circulation-source {
+      display: inline;
+      font-size: 0.9rem;
+      opacity: 0.72;
+      margin-left: 0.28rem;
+    }
+
+    @media (max-width: 820px) {
+      .ancillary-gallery.documentation-grid,
+      .circulation-list {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure a {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure img {
+        max-width: 260px;
+        max-height: 190px;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Growing Grins</h1>
+
+    <nav class="top-nav">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1970s/paintings/1970s.html">1970s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1980s/paintings/1980s.html">1980s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1990s/paintings/1990s.html">1990s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/paintings/2000s.html">2000s</a>
+      <a class="nav-pill is-active" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s.html">2010s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2020s/paintings/2020s.html">2020s</a>
+</nav>
+    <nav class="top-nav year-return-nav">
+      <a class="nav-pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2010/index.html">← Return to 2010</a>
+    </nav>
+  </header>
+
+  <main class="work-layout">
+    <figure class="hero-card">
+      <img
+        src="../../../../images/Paintings/2010s/2010/Growing-Grins.jpg"
+        alt="Growing Grins"
+        class="work-hero"
+        loading="lazy"
+      />
+    </figure>
+
+    <ul class="work-meta" data-work-id="RE-000969">
+      <li><strong>Title:</strong> Growing Grins</li>
+      <li><strong>Date:</strong> 2010</li>
+      <li><strong>Medium:</strong> Oil, acrylic and collage on canvas</li>
+      <li><strong>Dimensions:</strong> 58 × 70 inches</li>
+      <li><strong>Work ID:</strong> RE-000969</li>
+      <li><strong>Signature / marks:</strong> Signed “ENGLISH,” lower right.</li>
+    </ul>
+
+    <section class="section-block">
+      <h2>Exhibitions</h2>
+      <p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p>
+      <p><em>Status Factory – The Art of Ron English</em>, Frank M. Doyle Arts Pavilion (Orange Coast College), Costa Mesa, California, US, November 12–December 17, 2010.</p>
+      <p><em>Dum English Exhibition</em>, Opera Gallery, New York, New York, US, June 11, 2012.</p>
+      <p><em>Art Fair Tokyo 2017</em>, JPS Gallery, Tokyo International Forum, Tokyo, Japan, March 16–19, 2017.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Literature</h2>
+      <p>Ron English, <em>Death and the Eternal Forever</em> (London: Korero Press, 2014), p. 121. ISBN 978-0957664920.</p>
+      <p>Ron English, <em>Status Factory: The Art of Ron English</em> (San Francisco: Last Gasp of San Francisco, 2014), p. 18. ISBN 978-0867197891.</p>
+      <p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 17. ISBN 978-2374950938.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Notes</h2>
+
+      <p>
+        Ron English assembled and photographed a reference set as a model for this work.
+      </p>
+
+      <p>
+        This work is reproduced on the show card for <em>Status Factory</em>.
+      </p>
+
+      <p>
+        The image was later reproduced in several related objects and editions, including a blotter-paper edition, a ceramic art plate, and print-related documentation connected to Bense Art Space.
+      </p>
+
+      <p>
+        A work-in-progress image for this painting is retained in the catalogue documentation.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2>Ancillary Documentation</h2>
+
+      <div class="ancillary-gallery documentation-grid">
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Models/Growing-Grins-STUDY.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Models/Growing-Grins-STUDY.jpg"
+              alt="Reference set assembled by Ron English for Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Reference set assembled by Ron English.</span>
+            <span class="card-detail-text">
+              Reference set assembled by Ron English and photographed as a model for <em>Growing Grins</em>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/growing-grins-wip.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/growing-grins-wip.jpg"
+              alt="Work-in-progress documentation for Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Work-in-progress documentation.</span>
+            <span class="card-detail-text">
+              Work-in-progress image documenting <em>Growing Grins</em> during production.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/status-factory-showcard.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/status-factory-showcard.jpg"
+              alt="Show card for Status Factory reproducing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Show card for <em>Status Factory</em>.</span>
+            <span class="card-detail-text">
+              Showcard documentation for <em>Status Factory</em>, reproducing <em>Growing Grins</em>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/many-paintings-1-status-factory-opera-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/many-paintings-1-status-factory-opera-arrestedmotion-screenshot.jpg"
+              alt="Archival screenshot of Arrested Motion Status Factory at Opera Gallery coverage showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title"><em>Status Factory</em> documentation at Opera Gallery.</span>
+            <span class="card-detail-text">
+              This work appears in <em>Arrested Motion</em>’s opening and exhibition photographs for Ron English’s <em>Status Factory</em> at Opera Gallery, New York.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/09/openings-ron-english-status-factory-opera-gallery/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 11, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/growing-grins-status-factory-opera-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/growing-grins-status-factory-opera-arrestedmotion-screenshot.jpg"
+              alt="Additional archival screenshot of Arrested Motion Status Factory at Opera Gallery coverage showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional <em>Status Factory</em> documentation at Opera Gallery.</span>
+            <span class="card-detail-text">
+              Additional archival screenshot from <em>Arrested Motion</em>’s coverage of Ron English’s <em>Status Factory</em> at Opera Gallery, New York.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/09/openings-ron-english-status-factory-opera-gallery/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 11, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/wide-shot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/wide-shot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Wide archival screenshot of Arrested Motion Status Factory at Frank M. Doyle Arts Pavilion showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Wide installation documentation for <em>Status Factory – The Art of Ron English</em>.</span>
+            <span class="card-detail-text">
+              Wide installation view from <em>Arrested Motion</em>’s opening and exhibition photographs for <em>Status Factory – The Art of Ron English</em> at Frank M. Doyle Arts Pavilion.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 14, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/wide-shot-2-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/wide-shot-2-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Additional wide archival screenshot of Arrested Motion Status Factory at Frank M. Doyle Arts Pavilion showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional wide installation documentation for <em>Status Factory – The Art of Ron English</em>.</span>
+            <span class="card-detail-text">
+              Additional wide installation view from <em>Arrested Motion</em>’s coverage of <em>Status Factory – The Art of Ron English</em> at Frank M. Doyle Arts Pavilion.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 14, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/growing-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/growing-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Archival screenshot of Arrested Motion Status Factory at Frank M. Doyle Arts Pavilion showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional <em>Status Factory – The Art of Ron English</em> documentation.</span>
+            <span class="card-detail-text">
+              Additional exhibition documentation from <em>Arrested Motion</em>’s coverage of <em>Status Factory – The Art of Ron English</em> at Frank M. Doyle Arts Pavilion.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 14, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/dum-english-exhibition-getty-1-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/dum-english-exhibition-getty-1-screenshot.jpg"
+              alt="Archival screenshot of Getty Images editorial photographs of the Dum English exhibition showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title"><em>Dum English</em> exhibition documentation.</span>
+            <span class="card-detail-text">
+              Archival screenshot of Getty Images’ editorial photographs of the <em>Dum English</em> exhibition opening at Opera Gallery, New York.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://www.gettyimages.com.mx/search/2/image?phrase=hennessy+presents+chris+brown+and+ron+english+dum+english+exhibition+and+toy+series+launch&amp;tracked_gsrp_landing=https%3A%2F%2Fwww.gettyimages.com.mx%2Fphotos%2Fhennessy-presents-chris-brown-and-ron-english-dum-english-exhibition-and-toy-series-launch" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 11, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/various-art-fair-tokyo-jps-gallery-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/various-art-fair-tokyo-jps-gallery-screenshot.jpg"
+              alt="Archival screenshot of JPS Gallery Art Fair Tokyo 2017 page showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">JPS Gallery documentation for <em>Art Fair Tokyo 2017</em>.</span>
+            <span class="card-detail-text">
+              Archival screenshot of JPS Gallery’s page for <em>Art Fair Tokyo 2017</em>, held at Tokyo International Forum, Tokyo, Japan, March 16–19, 2017.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://jpsgallery.com/exhibition/art-fair-tokyo-2017/" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/various3-art-fair-tokyo-jps-gallery-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/various3-art-fair-tokyo-jps-gallery-screenshot.jpg"
+              alt="Additional archival screenshot of JPS Gallery Art Fair Tokyo 2017 page showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional JPS Gallery documentation for <em>Art Fair Tokyo 2017</em>.</span>
+            <span class="card-detail-text">
+              Additional archival screenshot from JPS Gallery’s <em>Art Fair Tokyo 2017</em> page.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://jpsgallery.com/exhibition/art-fair-tokyo-2017/" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/growning-grins-askart.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/growning-grins-askart.jpg"
+              alt="Archival screenshot of AskArt page documenting Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">AskArt online documentation.</span>
+            <span class="card-detail-text">
+              Archival screenshot of AskArt auction-record documentation for <em>Growing Grins</em>, retained as additional online documentation.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://www.askart.com/auction_records/Ron_English/11164754/Ron_English" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/growing-grins-blotter.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/growing-grins-blotter.webp"
+              alt="Growing Grins blotter-paper edition"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Blotter-paper reproduction.</span>
+            <span class="card-detail-text">
+              Standard X Future documents <em>Growing Grins – Blotter Edition</em> as an archival pigment print on perforated blotter paper, signed and numbered, in an edition of 150, measuring 7.5 × 7.5 inches.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://www.standardxfuture.com/shop/p/growing-grins-blotter-edition-by-ron-english" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation/growing-grins-plate.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation/growing-grins-plate.jpg"
+              alt="Sunflower Grin ceramic art plate by Ron English"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Ceramic art-plate reproduction.</span>
+            <span class="card-detail-text">
+              IamRetro documents <em>Sunflower Grin Large Art Plate by Ron English Popaganda</em> as a ceramic plate using this image.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://iamretro.com/products/sunflowers-large-art-plate-by-ron-english-popaganda" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/growing-grins-szdaily.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/growing-grins-szdaily.jpg"
+              alt="Archival screenshot of Shenzhen Government Online page documenting print Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Bense Art Space print documentation.</span>
+            <span class="card-detail-text">
+              Archival screenshot of Shenzhen Government Online / Shenzhen Daily coverage of works at Bense Art Space. The page captions the image as print <em>Growing Grins</em> by Ron English, with photos courtesy of Bense Art Space.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://www.sz.gov.cn/en_szgov/aboutsz/whatson/content/post_7592019.html" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/various-art-fair-tokyo-toysrevil-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/various-art-fair-tokyo-toysrevil-screenshot.jpg"
+              alt="Archival screenshot of TOYSREVIL post about Ron English Sun Flowers at Art Fair Tokyo 2017"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">TOYSREVIL documentation for Ron English’s Sun Flowers at Art Fair Tokyo 2017.</span>
+            <span class="card-detail-text">
+              Archival screenshot of TOYSREVIL’s post documenting Ron English’s Sun Flowers presentation and live painting at Art Fair Tokyo 2017.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://toysrevil.blogspot.com/2017/03/ron-englishs-sun-flowers-at-art-fair.html" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/various2-hundreds-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/various2-hundreds-screenshot.jpg"
+              alt="Archival screenshot of The Hundreds Modern English post showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">The Hundreds online documentation.</span>
+            <span class="card-detail-text">
+              Archival screenshot of The Hundreds’ “Modern English” post, retained as additional online documentation for the work.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://thehundreds.com/blogs/bobby-hundreds/modern-english?_pos=7&amp;_sid=0d22d2652&amp;_ss=r" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/vandalog-popupfactory-opera2.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/vandalog-popupfactory-opera2.jpg"
+              alt="Archival screenshot of blog post showing Growing Grins"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional online documentation.</span>
+            <span class="card-detail-text">
+              Archival screenshot retained as additional online documentation for <em>Growing Grins</em>.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://angelawenum.wordpress.com/2012/10/24/illustration-wednesday-ron-englishs-beautiful-and-deranged-mind/" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Selected Online Circulation</h2>
+
+      <p class="circulation-note">
+        Selected examples of the work’s online circulation, reproduction, or discussion. This list is not exhaustive; it is intended to document representative appearances of the image beyond formal exhibition and publication records.
+      </p>
+
+      <div class="circulation-list">
+        <a class="circulation-link" href="https://blog.kidrobot.com/ron-englishs-status-factory-opens-at-opera-gallery-in-new-york/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ron English’s Status Factory Opens at Opera Gallery</span>
+          <span class="circulation-source">· Kidrobot</span>
+        </a>
+
+        <a class="circulation-link" href="https://nevsedoma.com.ua/130232-raboty-rona-inglisha-19-foto.html" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Raboty Rona Inglisha</span>
+          <span class="circulation-source">· Nevsedoma</span>
+        </a>
+
+        <a class="circulation-link" href="https://eurekart.wordpress.com/category/graphic-design/page/2/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Graphic design archive page</span>
+          <span class="circulation-source">· Eurekart</span>
+        </a>
+
+        <a class="circulation-link" href="https://hunnybunny39.amebaownd.com/posts/2164239/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ron English image post</span>
+          <span class="circulation-source">· Ameba Ownd</span>
+        </a>
+
+        <a class="circulation-link" href="https://www.askart.com/bio/Ron_English/11164754/Ron_English" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ron English artist biography</span>
+          <span class="circulation-source">· AskArt</span>
+        </a>
+
+        <a class="circulation-link" href="https://kknews.cc/zh-cn/news/gmo85zm.html" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ron English image article</span>
+          <span class="circulation-source">· KKNews</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+
+

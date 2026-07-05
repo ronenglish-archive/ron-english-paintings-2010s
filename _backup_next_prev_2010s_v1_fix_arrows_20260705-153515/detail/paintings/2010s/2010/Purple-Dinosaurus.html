@@ -1,0 +1,453 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purple Dinosaurus – Ron English Catalogue Raisonné</title>
+
+  <meta name="work-id" content="RE-000995" />
+
+  <link rel="stylesheet" href="../../../../css/styles.css" />
+
+  <style>
+    .hero-card,
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      margin: 0;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+    }
+
+    .hero-card {
+      margin-bottom: 1.5rem;
+      padding: 0.95rem;
+    }
+
+    .hero-card img,
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .hero-card .work-hero {
+      margin: 0;
+    }
+
+    .ancillary-gallery.documentation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: start;
+      max-width: 920px;
+      margin-top: 0.85rem;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure {
+      display: grid;
+      grid-template-columns: minmax(150px, 230px) 1fr;
+      align-items: center;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      padding: 0.85rem;
+      text-decoration: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure img {
+      width: 100%;
+      max-width: 210px;
+      max-height: 170px;
+      height: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
+      display: block;
+      margin: 0;
+      padding: 0.95rem 1.05rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
+      display: inline;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .card-title {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .card-detail-text {
+      display: block;
+      margin-top: 0.35rem;
+    }
+
+    .card-source {
+      display: block;
+      margin-top: 0.55rem;
+      font-size: 0.86rem;
+      opacity: 0.86;
+      line-height: 1.45;
+    }
+
+    .circulation-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.22rem;
+      margin-top: 0.65rem;
+    }
+
+    .circulation-link {
+      display: block;
+      padding: 0.08rem 0;
+      text-decoration: none;
+      line-height: 1.22;
+    }
+
+    .circulation-link:hover .circulation-title {
+      text-decoration: underline;
+    }
+
+    .circulation-title {
+      display: inline;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .circulation-source {
+      display: inline;
+      font-size: 0.9rem;
+      opacity: 0.72;
+      margin-left: 0.28rem;
+    }
+
+    @media (max-width: 820px) {
+      .ancillary-gallery.documentation-grid,
+      .circulation-list {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure {
+        grid-template-columns: 1fr;
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure a {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .ancillary-gallery.documentation-grid .ancillary-figure img {
+        max-width: 260px;
+        max-height: 190px;
+      }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Purple Dinosaurus</h1>
+
+    <nav class="top-nav">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1970s/paintings/1970s.html">1970s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1980s/paintings/1980s.html">1980s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-1990s/paintings/1990s.html">1990s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/paintings/2000s.html">2000s</a>
+      <a class="nav-pill is-active" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s.html">2010s</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2020s/paintings/2020s.html">2020s</a>
+</nav>
+    <nav class="top-nav year-return-nav">
+      <a class="nav-pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2010/index.html">← Return to 2010</a>
+    </nav>
+  </header>
+
+  <main class="work-layout">
+    <figure class="hero-card">
+      <img
+        src="../../../../images/Paintings/2010s/2010/Purple-Dinosaurus.jpg"
+        alt="Purple Dinosaurus"
+        class="work-hero"
+        loading="lazy"
+      />
+    </figure>
+
+    <ul class="work-meta" data-work-id="RE-000995">
+      <li><strong>Title:</strong> Purple Dinosaurus</li>
+      <li><strong>Date:</strong> 2010</li>
+      <li><strong>Medium:</strong> Oil on canvas</li>
+      <li><strong>Dimensions:</strong> 58 × 84 inches</li>
+      <li><strong>Work ID:</strong> RE-000995</li>
+      <li><strong>Signature / marks:</strong> None observed.</li>
+    </ul>
+
+    <section class="section-block">
+      <h2>Exhibitions</h2>
+      <p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p>
+      <p><em>Status Factory – The Art of Ron English</em>, Frank M. Doyle Arts Pavilion (Orange Coast College), Costa Mesa, California, US, November 12–December 17, 2010.</p>
+      <p><em>Ron English at Art Wynwood 2019</em>, Eternity Gallery solo booth presentation, Art Wynwood, Miami, Florida, US, February 14–18, 2019.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Literature</h2>
+      <p>Ron English, <em>Death and the Eternal Forever</em> (London: Korero Press, 2014), p. 83. ISBN 978-0957664920.</p>
+      <p>Ron English, <em>Status Factory: The Art of Ron English</em> (San Francisco: Last Gasp of San Francisco, 2014), p. 21. ISBN 978-0867197891.</p>
+      <p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 28. ISBN 978-2374950938.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Notes</h2>
+
+      <p>
+        Also known as <em>B-Rex’s Inner Carnivore</em>.
+      </p>
+
+      <p>
+        This work appears in Arrested Motion’s opening and exhibition photographs for Ron English’s <em>Status Factory</em> at Opera Gallery.
+      </p>
+
+      <p>
+        This work also appears in Arrested Motion’s opening and exhibition photographs for <em>Status Factory – The Art of Ron English</em> at Frank M. Doyle Arts Pavilion.
+      </p>
+
+      <p>
+        This work appears at 1:51 in Highsnobiety TV’s YouTube video <em>Ron English Talks Status Factory</em>.
+      </p>
+
+      <p>
+        This work appears at 1:01 in the Vimeo video <em>Ron English’s Status Factory</em>.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2>Ancillary Documentation</h2>
+
+      <div class="ancillary-gallery documentation-grid">
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation3/wide-shot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation3/wide-shot-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Wide archival screenshot of Arrested Motion’s Status Factory at Frank M. Doyle Arts Pavilion showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Wide installation documentation for <em>Status Factory – The Art of Ron English</em>.</span>
+            <span class="card-detail-text">
+              Wide installation view from <em>Arrested Motion</em>’s opening and exhibition photographs for <em>Status Factory – The Art of Ron English</em> at Frank M. Doyle Arts Pavilion.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 14, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/purple-dinosaurus-status-factory-opera-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/purple-dinosaurus-status-factory-opera-arrestedmotion-screenshot.jpg"
+              alt="Archival screenshot of Arrested Motion’s Status Factory coverage showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title"><em>Status Factory</em> documentation at Opera Gallery.</span>
+            <span class="card-detail-text">
+              This work appears in <em>Arrested Motion</em>’s opening and exhibition photographs for Ron English’s <em>Status Factory</em> at Opera Gallery, New York.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/09/openings-ron-english-status-factory-opera-gallery/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 11, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/many-paintings-1-status-factory-opera-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/many-paintings-1-status-factory-opera-arrestedmotion-screenshot.jpg"
+              alt="Additional archival screenshot of Arrested Motion’s Status Factory coverage showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional <em>Status Factory</em> documentation at Opera Gallery.</span>
+            <span class="card-detail-text">
+              Additional archival screenshot from <em>Arrested Motion</em>’s coverage of Ron English’s <em>Status Factory</em> at Opera Gallery, New York.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/09/openings-ron-english-status-factory-opera-gallery/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 11, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/purple-dino-status-factory-opera-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/purple-dino-status-factory-opera-arrestedmotion-screenshot.jpg"
+              alt="Additional archival screenshot of Arrested Motion’s Status Factory at Opera Gallery showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional Opera Gallery documentation.</span>
+            <span class="card-detail-text">
+              Additional exhibition documentation from <em>Arrested Motion</em>’s coverage of <em>Status Factory</em> at Opera Gallery, New York.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/09/openings-ron-english-status-factory-opera-gallery/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 11, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/purple-dino-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/purple-dino-status-factory-Doyle-arrestedmotion-screenshot.jpg"
+              alt="Archival screenshot of Arrested Motion’s Status Factory at Frank M. Doyle Arts Pavilion showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Additional <em>Status Factory – The Art of Ron English</em> documentation.</span>
+            <span class="card-detail-text">
+              Additional exhibition documentation from <em>Arrested Motion</em>’s coverage of <em>Status Factory – The Art of Ron English</em> at Frank M. Doyle Arts Pavilion.
+            </span>
+            <span class="card-source">
+              Source page available
+              <a href="https://arrestedmotion.com/2010/11/openings-ron-english-status-factory-frank-m-doyle-arts-pavilion/" target="_blank" rel="noopener noreferrer">here</a>,
+              accessed April 14, 2026.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Dynamic-Photos/purple-dinosaurus-highsnobiety-status-factory-video-still.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Dynamic-Photos/purple-dinosaurus-highsnobiety-status-factory-video-still.jpg"
+              alt="Still frame from Ron English Talks Status Factory showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Video still from <em>Ron English Talks Status Factory</em>.</span>
+            <span class="card-detail-text">
+              Still frame documenting <em>Purple Dinosaurus</em> at 1:51 in Highsnobiety TV’s YouTube video <em>Ron English Talks Status Factory</em>.
+            </span>
+            <span class="card-source">
+              Source video available
+              <a href="https://www.youtube.com/watch?v=laf0Tab4Pzk&amp;t=111s" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="ancillary-figure">
+          <a
+            href="../../../../images/Paintings/Web-Documentation2/status-factory-neue-films2.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="../../../../images/Paintings/Web-Documentation2/status-factory-neue-films10.jpg"
+              alt="Video still from Ron English’s Status Factory showing Purple Dinosaurus"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="card-title">Video still from <em>Ron English’s Status Factory</em>.</span>
+            <span class="card-detail-text">
+              Still frame documenting <em>Purple Dinosaurus</em> at 1:01 in the Vimeo video <em>Ron English’s Status Factory</em>.
+            </span>
+            <span class="card-source">
+              Source video available
+              <a href="https://vimeo.com/15723567#t=61s" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Selected Online Circulation</h2>
+
+      <p class="circulation-note">
+        Selected examples of the work’s online circulation, reproduction, or discussion. This list is not exhaustive; it is intended to document representative appearances of the image beyond formal exhibition and publication records.
+      </p>
+
+      <div class="circulation-list">
+        <a class="circulation-link" href="https://art-assorty.ru/2392-ron-english.html" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Ron English Ð¿Ð¾Ð¿-Ð°Ñ€Ñ‚, ÐºÐ»Ð¾ÑƒÐ½Ð°Ð´Ð° Ð¸ ÑÑ‚Ñ‘Ð±</span>
+          <span class="circulation-source">· Art-Assorty</span>
+        </a>
+
+        <a class="circulation-link" href="https://chicquero.wordpress.com/2011/12/06/popaganda-art-and-crimes/" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">POPaganda, art and crimes!</span>
+          <span class="circulation-source">· Chicquero</span>
+        </a>
+
+        <a class="circulation-link" href="https://thehundreds.com/blogs/bobby-hundreds/modern-english?_pos=7&amp;_sid=0d22d2652&amp;_ss=r" target="_blank" rel="noopener noreferrer">
+          <span class="circulation-title">Modern English</span>
+          <span class="circulation-source">· The Hundreds</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
