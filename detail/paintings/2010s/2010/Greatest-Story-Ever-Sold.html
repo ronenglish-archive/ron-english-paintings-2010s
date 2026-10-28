@@ -291,6 +291,59 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:has(> figure:nth-child(4)) > figure img {max-height:142px!important}
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure {flex:0 1 265px!important;width:265px!important;max-width:265px!important}
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure img {max-height:200px!important}
+/* Artwork-specific 65-thumbnail compact museum gallery */
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural .ron-pdoc-items {
+ display:grid!important;grid-template-columns:repeat(auto-fit,minmax(120px,1fr))!important;
+ justify-content:center!important;align-items:start!important;gap:12px!important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile {
+ width:100%!important;max-width:none!important;min-width:0!important;flex:auto!important;
+ margin:0!important;padding:8px!important;border:1px solid #ded9d0;border-radius:9px;background:#fff;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile img {
+ width:100%!important;max-width:100%!important;height:105px!important;max-height:105px!important;object-fit:contain!important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile figcaption {
+ font-size:11px!important;line-height:1.3!important;overflow-wrap:anywhere;
+}
+@media(max-width:540px){body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural .ron-pdoc-items{grid-template-columns:repeat(auto-fit,minmax(105px,1fr))!important;gap:9px!important}}
+/* RON-GREATEST-STORY-CULTURAL-COMPACT-V3-20261028 */
+/* Flex wrap (not CSS grid) centers a partially filled final row, at every viewport width. */
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural .ron-pdoc-items {
+ display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;
+ justify-content:center!important;align-items:flex-start!important;align-content:flex-start!important;
+ gap:8px!important;grid-template-columns:none!important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile {
+ box-sizing:border-box!important;flex:0 0 135px!important;width:135px!important;
+ max-width:135px!important;min-width:0!important;height:auto!important;min-height:0!important;
+ align-self:flex-start!important;margin:0!important;padding:5px!important;
+ display:flex!important;flex-direction:column!important;justify-content:flex-start!important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile > a {
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ height:75px!important;min-height:0!important;max-height:75px!important;margin:0!important;padding:0!important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile img {
+ display:block!important;box-sizing:border-box!important;width:auto!important;max-width:100%!important;
+ height:auto!important;max-height:75px!important;min-height:0!important;object-fit:contain!important;
+ margin:0 auto!important;padding:0!important;
+}
+body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile figcaption {
+ margin:3px 0 0!important;padding:0!important;min-height:0!important;
+ font-size:10.5px!important;line-height:1.2!important;
+}
+@media(max-width:440px){
+ body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile {
+  flex-basis:112px!important;width:112px!important;max-width:112px!important;
+ }
+ body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile > a {
+  height:66px!important;max-height:66px!important;
+ }
+ body.ron-museum-v2 main.work-layout > section.ron-greatest-story-cultural figure.ron-pdoc-tile img {
+  max-height:66px!important;
+ }
+}
 </style>
 </head>
 
@@ -342,6 +395,11 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
       <p><em>Product Displacement</em>, CHG Circa (Corey Helford Gallery), Culver City, California, US, May 23–July 18, 2015.</p>
     </section>
 
+<section class="section-block" data-role="notes">
+<h2>Notes</h2>
+<p>The artist, Ron English, is depicted in this painting.</p>
+</section>
+
 <section class="section-block ron-pdoc-panel" data-role="artist-created-graphic-designs">
 <h2>Artist-Created Graphic Designs</h2>
 <div class="ancillary-gallery documentation-grid ron-pdoc-items">
@@ -356,10 +414,166 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 </div>
 </section>
 
+<section class="section-block ron-pdoc-panel ron-greatest-story-cultural" data-role="cultural-artistic-references">
+<h2>Cultural &amp; Artistic References</h2>
+<div class="ancillary-gallery documentation-grid ron-pdoc-items"><figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/dietcoke.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/dietcoke.jpg" alt="Diet Coke Logo" loading="lazy"></a><figcaption><span class="card-title">Diet Coke Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/priceisright.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/priceisright.jpg" alt="The Price Is Right Logo" loading="lazy"></a><figcaption><span class="card-title">The Price Is Right Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/citibanklogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/citibanklogo.jpg" alt="Citibank Logo" loading="lazy"></a><figcaption><span class="card-title">Citibank Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/sherwinwilliams.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/sherwinwilliams.jpg" alt="Sherwin-Williams Logo" loading="lazy"></a><figcaption><span class="card-title">Sherwin-Williams Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/bp.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/bp.jpg" alt="BP &ndash; Helios Logo" loading="lazy"></a><figcaption><span class="card-title">BP &ndash; Helios Logo</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/BP" target="_blank" rel="noopener noreferrer">Wikipedia</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/dollarbill.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/dollarbill.jpg" alt="Dollar Bill" loading="lazy"></a><figcaption><span class="card-title">Dollar Bill</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/pizzahut.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/pizzahut.jpg" alt="Pizza Hut Logo" loading="lazy"></a><figcaption><span class="card-title">Pizza Hut Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/Cristo_crucificado.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/Cristo_crucificado.jpg" alt="Jesus Crucified" loading="lazy"></a><figcaption><span class="card-title">Jesus Crucified</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/americanexpresslogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/americanexpresslogo.jpg" alt="American Express Logo" loading="lazy"></a><figcaption><span class="card-title">American Express Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/copslogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/copslogo.jpg" alt="COPS TV Show Logo" loading="lazy"></a><figcaption><span class="card-title">COPS TV Show Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/The_Rolling_Stones'_logo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/The_Rolling_Stones'_logo.jpg" alt="Tongue and Lips Logo" loading="lazy"></a><figcaption><span class="card-title">Tongue and Lips Logo</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Tongue_and_lips_logo" target="_blank" rel="noopener noreferrer">Wikipedia</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/pepsilogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/pepsilogo.jpg" alt="Pepsi Logo" loading="lazy"></a><figcaption><span class="card-title">Pepsi Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/burgerkinglogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/burgerkinglogo.jpg" alt="Burger King Logo" loading="lazy"></a><figcaption><span class="card-title">Burger King Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Public-Domain/usarmy.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Public-Domain/usarmy.jpg" alt="James Montgomery Flagg, <em>I Want You for U.S. Army</em>, 1917" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">James Montgomery Flagg, <em>I Want You for U.S. Army</em>, 1917</span>
+            <span class="card-source">Public domain image.</span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Web-Documentation2/mickey-mouse-screenshot.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Web-Documentation2/mickey-mouse-screenshot.jpg" alt="Mickey Mouse" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Mickey Mouse</span>
+            <span class="card-source"><a href="https://en.wikipedia.org/wiki/Mickey_Mouse" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Web-Documentation2/bart-simpson-screenshot.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Web-Documentation2/bart-simpson-screenshot.jpg" alt="Bart Simpson" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Bart Simpson</span>
+            <span class="card-source"><a href="https://en.wikipedia.org/wiki/Bart_Simpson" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation/spongebob-screenshot.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation/spongebob-screenshot.jpg" alt="SpongeBob SquarePants" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">SpongeBob SquarePants</span>
+            <span class="card-source"><a href="https://en.wikipedia.org/wiki/SpongeBob_SquarePants_%28character%29" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2020s/images/Paintings/Web-Documentation3/cap-crunch.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2020s/images/Paintings/Web-Documentation3/cap-crunch.jpg" alt="Cap'n Crunch" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Cap'n Crunch</span>
+            <span class="card-source"><a href="https://cereal.fandom.com/wiki/Captain_Horatio_Magellan_Crunch" target="_blank" rel="noopener noreferrer">Cereal Wiki</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/tony-tiger.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/tony-tiger.jpg" alt="Tony the Tiger" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Tony the Tiger</span>
+            <span class="card-source"><a href="https://cereal.fandom.com/wiki/Tony_The_Tiger" target="_blank" rel="noopener noreferrer">Cereal Wiki</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/17_Sears.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/17_Sears.jpg" alt="Sears Logo" loading="lazy" /></a><figcaption><span class="card-title">Sears Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/11_Kellogg_s.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/11_Kellogg_s.jpg" alt="Kellogg's Logo" loading="lazy" /></a><figcaption><span class="card-title">Kellogg's Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/walmart.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/walmart.jpg" alt="Wal-Mart Logo" loading="lazy" /></a><figcaption><span class="card-title">Wal-Mart Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/Kool-Aid.svg.webp" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/Kool-Aid.svg.webp" alt="Kool-Aid Logo" loading="lazy" /></a><figcaption><span class="card-title">Kool-Aid Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/whitecastle.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/whitecastle.jpg" alt="White Castle Logo" loading="lazy" /></a><figcaption><span class="card-title">White Castle Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/wendys.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/wendys.jpg" alt="Wendy's Logo" loading="lazy" /></a><figcaption><span class="card-title">Wendy's Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/cokecan.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/cokecan.jpg" alt="Coke Can" loading="lazy" /></a><figcaption><span class="card-title">Coke Can</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/harley.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/harley.jpg" alt="Harley Davidson Logo" loading="lazy" /></a><figcaption><span class="card-title">Harley Davidson Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/dell.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/dell.jpg" alt="Dell Computers Logo" loading="lazy" /></a><figcaption><span class="card-title">Dell Computers Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/pampers.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/pampers.jpg" alt="Pampers Logo" loading="lazy" /></a><figcaption><span class="card-title">Pampers Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/xrayspecs.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/xrayspecs.jpg" alt="X-Ray Specs Ad" loading="lazy" /></a><figcaption><span class="card-title">X-Ray Specs Ad</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/X-ray_specs" target="_blank" rel="noopener noreferrer">Source</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/zenithlogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/zenithlogo.jpg" alt="Zenith Logo" loading="lazy" /></a><figcaption><span class="card-title">Zenith Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/millerlite.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/millerlite.jpg" alt="Miller Lite Logo" loading="lazy" /></a><figcaption><span class="card-title">Miller Lite Logo</span><span class="card-source"><a href="https://logos-world.net/lite-beer-logo/" target="_blank" rel="noopener noreferrer">Source</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/12_Taco_Bell.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/12_Taco_Bell.jpg" alt="Taco Bell Logo" loading="lazy" /></a><figcaption><span class="card-title">Taco Bell Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/23_Coca-Cola.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/23_Coca-Cola.jpg" alt="Coca-Cola Logo" loading="lazy" /></a><figcaption><span class="card-title">Coca-Cola Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/22_Microsoft.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/22_Microsoft.jpg" alt="Microsoft Logo" loading="lazy" /></a><figcaption><span class="card-title">Microsoft Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/20_GE.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/20_GE.jpg" alt="GE Logo" loading="lazy" /></a><figcaption><span class="card-title">GE Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/19_Tommy_Hilfiger.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/19_Tommy_Hilfiger.jpg" alt="Tommy Hilfiger Logo" loading="lazy" /></a><figcaption><span class="card-title">Tommy Hilfiger Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/10_NASA.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/10_NASA.jpg" alt="NASA Logo" loading="lazy" /></a><figcaption><span class="card-title">NASA Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/04_Blackwater.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/04_Blackwater.jpg" alt="Blackwater Logo" loading="lazy" /></a><figcaption><span class="card-title">Blackwater Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/14_Coors.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/14_Coors.jpg" alt="Coors Logo" loading="lazy" /></a><figcaption><span class="card-title">Coors Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/02_Nike___word___swoosh.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/02_Nike___word___swoosh.jpg" alt="Nike Logo" loading="lazy" /></a><figcaption><span class="card-title">Nike Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/07_CBS.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/07_CBS.jpg" alt="CBS Logo" loading="lazy" /></a><figcaption><span class="card-title">CBS Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/03_Global_Crossing.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/03_Global_Crossing.jpg" alt="Global Crossing Logo" loading="lazy" /></a><figcaption><span class="card-title">Global Crossing Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/01_New_York_Times.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/01_New_York_Times.jpg" alt="New York Times Logo" loading="lazy" /></a><figcaption><span class="card-title">New York Times Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/15_Pfizer.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/15_Pfizer.jpg" alt="Pfizer Logo" loading="lazy" /></a><figcaption><span class="card-title">Pfizer Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/18_Levi_s.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/18_Levi_s.jpg" alt="Levi's Logo" loading="lazy" /></a><figcaption><span class="card-title">Levi's Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/16_Caterpillar.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/16_Caterpillar.jpg" alt="Caterpillar Logo" loading="lazy" /></a><figcaption><span class="card-title">Caterpillar Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/bigboy.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/bigboy.jpg" alt="Big Boy Restaurant" loading="lazy" /></a><figcaption><span class="card-title">Big Boy Restaurant</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/dennys.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/dennys.jpg" alt="Denny's Logo" loading="lazy" /></a><figcaption><span class="card-title">Denny's Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/always.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/always.jpg" alt="Always Logo" loading="lazy" /></a><figcaption><span class="card-title">Always Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/lego.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/lego.jpg" alt="Lego Logo" loading="lazy" /></a><figcaption><span class="card-title">Lego Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/mrclean.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/mrclean.jpg" alt="Mr. Clean" loading="lazy" /></a><figcaption><span class="card-title">Mr. Clean</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Mr._Clean" target="_blank" rel="noopener noreferrer">Source</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/bluemoon.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/bluemoon.jpg" alt="Blue Moon Beer" loading="lazy" /></a><figcaption><span class="card-title">Blue Moon Beer</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Blue_Moon_(beer)" target="_blank" rel="noopener noreferrer">Source</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/geeksquad.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/geeksquad.jpg" alt="Geek Squad Logo" loading="lazy" /></a><figcaption><span class="card-title">Geek Squad Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/nfl.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/nfl.jpg" alt="NFL Logo" loading="lazy" /></a><figcaption><span class="card-title">NFL Logo</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/National_Football_League" target="_blank" rel="noopener noreferrer">Source</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/enron.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/enron.jpg" alt="Enron Logo" loading="lazy" /></a><figcaption><span class="card-title">Enron Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/shell.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/shell.jpg" alt="Shell Logo" loading="lazy" /></a><figcaption><span class="card-title">Shell Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/morton-salt-girl.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/morton-salt-girl.jpg" alt="Morton Salt Girl" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Morton Salt Girl</span>
+            <span class="card-source"><a href="https://www.mortonsalt.com/heritage-era/a-time-for-expansion/" target="_blank" rel="noopener noreferrer">Morton Salt</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-1990s/images/Paintings/Web-Documentation2/Absolut_vodka_bottle.png" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-1990s/images/Paintings/Web-Documentation2/Absolut_vodka_bottle.png" alt="Absolut Vodka bottle" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Absolut Vodka bottle</span>
+            <span class="card-source"><a href="https://es.wikipedia.org/wiki/Absolut_Vodka" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-1990s/images/Paintings/Web-Documentation2/McDonald's_Golden_Arches.svg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-1990s/images/Paintings/Web-Documentation2/McDonald's_Golden_Arches.svg" alt="McDonald's Golden Arches" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">McDonald's Golden Arches</span>
+            <span class="card-source"><a href="https://en.wikipedia.org/wiki/Golden_Arches" target="_blank" rel="noopener noreferrer">Wikipedia</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Web-Documentation3/ronald-mcdonald.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2000s/images/Paintings/Web-Documentation3/ronald-mcdonald.jpg" alt="Ronald McDonald" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Ronald McDonald</span>
+            <span class="card-source"><a href="https://mcdonalds.fandom.com/wiki/Ronald_McDonald" target="_blank" rel="noopener noreferrer">McDonald's Wiki</a></span>
+          </figcaption>
+        </figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
+          <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/cocacola.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/cocacola.jpg" alt="Coca-Cola can" loading="lazy" />
+          </a>
+          <figcaption>
+            <span class="card-title">Coca-Cola can</span>
+            
+            <span class="card-source">Public domain image.</span>
+          </figcaption>
+        </figure>
 
-<section class="section-block ron-related-panel" data-role="related-works"><h2>Related Works by Ron English</h2><div class="ron-related-subsection"><h3>Used in the Creation of This Painting</h3><div class="ron-related-gallery"><figure class="ron-related-tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/mythic-fantastical-figures/works/re-014455-r.html"><img data-related-artwork-thumb="true" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%2881%29.jpg?v=20260619a" alt="Jesus" loading="lazy"></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/mythic-fantastical-figures/works/re-014455-r.html">Jesus</a></figcaption></figure></div></div></section>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/lutheran.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/lutheran.jpg" alt="Lutheran Church Logo" loading="lazy" /></a><figcaption><span class="card-title">Lutheran Church Logo</span><span class="card-source"><a href="https://www.byfaithalone.org/" target="_blank" rel="noopener noreferrer">By Faith Alone</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/aalogo.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/aalogo.jpg" alt="American Airlines Logo" loading="lazy" /></a><figcaption><span class="card-title">American Airlines Logo</span><span class="card-source"><a href="https://www.logohistories.com/p/american-airlines-logo-1967-ddf" target="_blank" rel="noopener noreferrer">Logo Histories</a></span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Web-Documentation3/virgin.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Web-Documentation3/virgin.jpg" alt="Virgin Records Logo" loading="lazy" /></a><figcaption><span class="card-title">Virgin Records Logo</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Virgin_Records" target="_blank" rel="noopener noreferrer">Wikipedia</a></span></figcaption></figure>
+</div></section>
 <!-- WORK-SEQUENCE-NAV-START -->
-<section class="section-block" data-role="cultural-artistic-references-link"><h2>Cultural &amp; Artistic References</h2><p style="text-align:center"><a href="Greatest-Story-Ever-Sold-Cultural-References.html">View cultural and artistic references</a></p></section><nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
+<nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
   <a class="nav-pill sequence-pill prev-work" href="Electric-Luminati.html">&larr; Previous: Electric Luminati</a>
   <a class="nav-pill sequence-pill next-work" href="Grin-Flag-with-Gun.html">Next: Grin Flag with Gun &rarr;</a>
 </nav>
