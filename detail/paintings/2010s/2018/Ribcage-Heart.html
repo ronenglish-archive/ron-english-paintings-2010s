@@ -382,6 +382,31 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure {flex:0 1 265px!important;width:265px!important;max-width:265px!important}
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure img {max-height:200px!important}
 </style>
+<style id="ron-ribcage-cultural-compact-2018-v1">
+/* Scoped compact cultural references: 4+ cultural images = 180px tiles.
+   Related Works incorporated paintings retain their separate 220px sizing. */
+body.ron-museum-v2 section[data-role="cultural-artistic-references"].ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid {
+  display:flex !important; flex-flow:row wrap !important;
+  justify-content:center !important; align-items:stretch !important;
+  gap:16px !important; grid-template-columns:none !important;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"].ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid > figure[data-doc-role="cultural-artistic-references"] {
+  box-sizing:border-box !important; flex:0 0 180px !important;
+  width:180px !important; min-width:0 !important; max-width:180px !important;
+  margin:0 !important;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"].ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid > figure[data-doc-role="cultural-artistic-references"] > a {
+  height:160px !important; min-height:160px !important; max-height:160px !important;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"].ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid > figure[data-doc-role="cultural-artistic-references"] > a > img {
+  max-width:100% !important; max-height:142px !important; object-fit:contain !important;
+}
+@media (max-width:440px) {
+  body.ron-museum-v2 section[data-role="cultural-artistic-references"].ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid > figure[data-doc-role="cultural-artistic-references"] {
+    flex:0 1 180px !important; max-width:100% !important;
+  }
+}
+</style>
 </head>
 
 <body class="ron-museum-v2">
