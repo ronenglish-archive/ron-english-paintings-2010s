@@ -273,6 +273,27 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure {flex:0 1 265px!important;width:265px!important;max-width:265px!important}
 body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure img {max-height:200px!important}
 </style>
+<style id="captain-caption-cultural-compact-confirmed-20261029">
+/* Approved Museum Frame V3: four or more Cultural & Artistic References = 180px tiles. */
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items {
+  display:flex !important; flex-flow:row wrap !important;
+  justify-content:center !important; gap:16px !important;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile {
+  flex:0 1 180px !important; width:180px !important;
+  max-width:180px !important; min-width:0 !important;
+}
+body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile img {
+  display:block; width:100% !important; height:auto !important;
+  object-fit:contain !important;
+}
+@media(max-width:460px) {
+ body.ron-museum-v2 section[data-role="cultural-artistic-references"] figure.ron-pdoc-tile {
+  max-width:calc(50% - 8px) !important; width:calc(50% - 8px) !important;
+  flex:0 1 calc(50% - 8px) !important;
+ }
+}
+</style>
 </head>
 
 <body class="ron-museum-v2">
@@ -363,7 +384,7 @@ body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-i
 </div></div></section>
 
 <section class="section-block ron-pdoc-panel" data-role="cultural-artistic-references"><h2>Cultural &amp; Artistic References</h2><div class="ancillary-gallery documentation-grid ron-pdoc-items">
-<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Cultural-References/Captain-Caption/Lynda_Carter_Wonder_Woman.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Cultural-References/Captain-Caption/Lynda_Carter_Wonder_Woman.jpg" alt="Wonder Woman" loading="lazy"></a><figcaption><span class="card-title">Wonder Woman</span><span class="card-source">Reference image provided by the catalogue owner.</span></figcaption></figure>
+<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Cultural-References/Captain-Caption/Lynda_Carter_Wonder_Woman.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Cultural-References/Captain-Caption/Lynda_Carter_Wonder_Woman.jpg" alt="Wonder Woman" loading="lazy"></a><figcaption><span class="card-title">Wonder Woman</span><span class="card-source">Public domain image.</span></figcaption></figure>
 <figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation/pebbles-screenshot.jpg" target="_blank" rel="noopener noreferrer"><img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation/pebbles-screenshot.jpg" alt="Pebbles Flintstone" loading="lazy"></a><figcaption><span class="card-title">Pebbles Flintstone</span><span class="card-source"><a href="https://flintstones.fandom.com/wiki/Pebbles_Flintstone" target="_blank" rel="noopener noreferrer">Flintstones Wiki</a></span></figcaption></figure>
 <figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="../../../../images/Paintings/Cultural-References/Captain-Caption/wilma.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../../images/Paintings/Cultural-References/Captain-Caption/wilma.jpg" alt="Wilma Flintstone" loading="lazy"></a><figcaption><span class="card-title">Wilma Flintstone</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Wilma_Flintstone" target="_blank" rel="noopener noreferrer">Wikipedia</a></span></figcaption></figure>
 <figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile"><a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/big-boy.jpg" target="_blank" rel="noopener noreferrer"><img src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Web-Documentation3/big-boy.jpg" alt="Big Boy mascot" loading="lazy"></a><figcaption><span class="card-title">Big Boy mascot</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Big_Boy_Restaurants" target="_blank" rel="noopener noreferrer">Wikipedia</a></span></figcaption></figure>
