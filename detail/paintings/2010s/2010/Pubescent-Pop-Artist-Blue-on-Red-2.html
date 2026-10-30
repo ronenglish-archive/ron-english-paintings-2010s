@@ -1,286 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pubescent Pop Artist – Blue on Red 2 – Ron English Catalogue Raisonné</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Pubescent Pop Artist – Blue on Red 2 – Ron English Catalogue Raisonné</title>
+<meta content="RE-000987" name="work-id"/>
 
-  <meta name="work-id" content="RE-000987" />
 
-  <link rel="stylesheet" href="../../../../css/styles.css" />
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
 
-  <style>
-    .hero-card,
-    .ancillary-gallery.documentation-grid .ancillary-figure {
-      margin: 0;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.04);
-      overflow: hidden;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
-    }
 
-    .hero-card {
-      margin-bottom: 1.5rem;
-      padding: 0.95rem;
-    }
+<style>
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:#222;background:#f7f6f3;font-family:system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;font-size:15px;line-height:1.6}
+a{color:inherit} .wrapper{max-width:1180px;margin:0 auto;padding:26px 18px 42px}
+.topnav,.sequence,.jumplinks{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:10px auto 20px}
+.pill,.jumplinks a{border:1px solid #dadde2;border-radius:99px;padding:8px 14px;font-size:13px;text-decoration:none;background:white}
+.pill:hover,.jumplinks a:hover{background:#f3f4f6}
+.topnav .is-active{background:#eeeae2}
+.hero,.panel{margin:25px auto;padding:26px 24px;background:white;border:1px solid #e1e4e8;border-radius:18px;width:100%;box-sizing:border-box;max-width:1080px;box-shadow:0 5px 18px #00000008}
+.hero{border:1px solid #ccc2b1;outline:1px solid #eae5db;outline-offset:-11px;border-radius:3px;padding:38px 28px;box-shadow:0 15px 35px #473b2712}
+h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0} h1{font-size:clamp(32px,5vw,47px);margin-bottom:24px} h2{font-size:23px;margin-bottom:18px} h3{font-size:19px;margin:8px 0 18px}
+.mainpainting{width:min(100%,680px);height:auto;max-height:760px;object-fit:contain;display:block;margin:0 auto 25px}
+.metadata{list-style:none;padding:0;text-align:center;line-height:1.95;max-width:850px;margin:0 auto}
+.hero .metadata{margin-top:0} .metaitem{text-align:center}
+.lead{max-width:920px;margin:0 auto 10px;color:#5c5f66;font-size:14px}
+.panel p, .panel li{max-width:920px;margin-left:auto;margin-right:auto}
+.panel .source-section-content{max-width:920px;margin:auto;text-align:center}
+.panel .source-section-content p{max-width:920px}
+.panel .source-section-content ul{list-style:none;padding:0}
+.panel .source-section-content li{margin:10px 0} .subsection:first-of-type{margin-top:0}
+.tile{display:block;border:1px solid #e3e5e8;background:white;color:#222;text-decoration:none;border-radius:7px;overflow:hidden;min-width:0}
+.tileimg{height:180px;background:#f6f6f6;display:flex;align-items:center;justify-content:center;padding:9px} .tileimg img{width:100%;height:100%;object-fit:contain}
+.tilecaption{padding:10px 8px 13px}
+.tilecaption .card-title,.tilecaption .card-source,.tilecaption .card-detail-text,.tilecaption .tilename,.tilecaption .tilesub{display:block}
+.tilecaption .card-source{margin-top:4px} .tilename{display:block;font-size:13px;font-weight:650;line-height:1.3} .tilesub{display:block;font-size:11px;color:#687080;margin-top:5px}
+.reference .tileimg{height:120px;padding:8px} .reference .tilename{font-size:11px} .reference .tilesub{font-size:10px} .reference .tilecaption{padding:7px 5px 9px}
+.tile:hover{border-color:#a6aeba;box-shadow:0 5px 15px #00000010} footer{font-size:14px;color:#777;margin:42px auto 5px;padding:25px 0;border-top:1px solid #e2e4e8}
+@media(max-width:580px){.wrapper{padding:15px 10px} .hero,.panel{padding:20px 12px} .tileimg{height:145px} .reference .tileimg{height:93px}}
 
-    .hero-card img,
-    .ancillary-gallery.documentation-grid .ancillary-figure img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
+.subsection{margin:18px 0 28px}.subsection:last-child{margin-bottom:0}.subsection h3{font-family:Georgia,serif;font-size:19px;font-weight:400;margin:0 0 20px}
+.simplelist{list-style:none;padding:0;margin:0 auto;max-width:920px}.simplelist li{margin:10px 0} 
+/* Subtle, consistent inner mat defining the painting’s actual edges. */
+.painting-mat{display:inline-flex;vertical-align:top;align-items:center;justify-content:center;max-width:100%;margin:0 auto 25px;padding:11px;background:#f6f3ec;border:1px solid #bfb9ad;box-shadow:0 1px 5px rgba(30,25,18,.12),0 7px 18px rgba(30,25,18,.045);line-height:0;text-decoration:none}
+.painting-mat .mainpainting{display:block;width:auto;max-width:100%;height:auto;max-height:760px;margin:0;object-fit:contain;border:1px solid rgba(70,63,52,.14)}
+@media(max-width:580px){.painting-mat{padding:7px}}
 
-    .hero-card .work-hero {
-      margin: 0;
-    }
+/* V3 — composite works: preserve panel order in the array and override arrangement case by case. */
+.panel-artworks{display:grid;gap:16px;max-width:960px;margin:0 auto 24px;align-items:center;justify-items:center}
+.panel-artworks.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.panel-artworks.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.panel-artworks.three{grid-template-columns:repeat(2,minmax(0,1fr))}
+.panel-artworks.three>.painting-mat:first-child{grid-column:1/-1;width:min(100%,460px)}
+.panel-artworks>.painting-mat{width:100%;margin:0;min-width:0}
+.panel-artworks .mainpainting{width:100%;max-height:550px}
+/* Related Works: each image and title/optional note live inside one subtle card. */
+.related-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:15px}
+.work-documentary{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+.work-documentary .tile{flex:0 0 220px;max-width:220px}
+.work-documentary .tileimg{height:190px}
+.work-documentary .tilesub{font-size:12px;line-height:1.45}
+.related-gallery>.tile{flex:0 1 220px;width:220px;max-width:100%;border:1px solid #ded9d0;border-radius:12px;box-shadow:0 2px 8px #0000000b}
+.related-gallery>.tile .tileimg{height:192px}
+.related-gallery>.tile .tilecaption{border-top:1px solid #ece9e3;background:#fff;padding:10px 10px 12px}
+.related-gallery>.tile .tilename{font-weight:600}
+/* Cultural references: one to three can be larger; four or more remain compact. */
+.cultural-large>.tile{flex:0 1 265px;max-width:265px;width:100%}
+.cultural-large,.cultural-compact{display:flex;justify-content:center;flex-wrap:wrap;align-items:stretch;gap:15px;margin:0 auto}
+.cultural-compact>.tile{flex:0 1 180px;max-width:180px;width:100%}
+.cultural-large .tileimg{height:200px}.cultural-compact .tileimg{height:142px}
+@media(max-width:580px){.work-documentary .tile{flex-basis:min(220px,100%)}}
+@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.two,.panel-artworks.three,.panel-artworks.four{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-artworks.three>.painting-mat:first-child{width:min(100%,350px)}.cultural-large>.tile,.cultural-compact>.tile{flex-basis:min(100%,180px)}.related-gallery>.tile{flex-basis:min(100%,210px)}}
 
-    .ancillary-gallery.documentation-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      align-items: start;
-      max-width: 920px;
-      margin-top: 0.85rem;
-    }
 
-    .ancillary-gallery.documentation-grid .ancillary-figure {
-      display: grid;
-      grid-template-columns: minmax(150px, 230px) 1fr;
-      align-items: center;
-    }
+/* V3 ordinary V2-origin navigation/metadata adapter; one authoritative rule per role. */
+.site-header{max-width:1180px;margin:0 auto;padding:20px 18px 0}
 
-    .ancillary-gallery.documentation-grid .ancillary-figure a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 150px;
-      padding: 0.85rem;
-      text-decoration: none;
-      border-right: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(255, 255, 255, 0.025);
-    }
-
-    .ancillary-gallery.documentation-grid .ancillary-figure img {
-      width: 100%;
-      max-width: 210px;
-      max-height: 170px;
-      height: auto;
-      object-fit: contain;
-      margin: 0 auto;
-    }
-
-    .ancillary-gallery.documentation-grid .ancillary-figure figcaption {
-      display: block;
-      margin: 0;
-      padding: 0.95rem 1.05rem;
-      font-size: 0.95rem;
-      line-height: 1.55;
-      text-align: left;
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .ancillary-gallery.documentation-grid .ancillary-figure figcaption a {
-      display: inline;
-      padding: 0;
-      text-decoration: underline;
-    }
-
-    .card-title {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-weight: 650;
-      line-height: 1.35;
-    }
-
-    .card-detail-text {
-      display: block;
-      margin-top: 0.35rem;
-    }
-
-    .card-source {
-      display: block;
-      margin-top: 0.55rem;
-      font-size: 0.86rem;
-      opacity: 0.86;
-      line-height: 1.45;
-    }
-
-    @media (max-width: 820px) {
-      .ancillary-gallery.documentation-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .ancillary-gallery.documentation-grid .ancillary-figure {
-        grid-template-columns: 1fr;
-      }
-
-      .ancillary-gallery.documentation-grid .ancillary-figure a {
-        min-height: auto;
-        border-right: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .ancillary-gallery.documentation-grid .ancillary-figure img {
-        max-width: 260px;
-        max-height: 190px;
-      }
-    }
-  </style>
-  <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-<style id="ron-pdoc-five-panels-b01-v1">
-/* Painting detail documentary panels only; retained legacy styles are overridden here. */
-section.ron-pdoc-panel { width:100% !important; max-width:960px !important; box-sizing:border-box !important; margin:22px auto !important; padding:22px !important; border:1px solid #e5e7eb !important; border-radius:18px !important; background:#fff !important; box-shadow:0 4px 16px rgba(0,0,0,.06) !important; color:#222 !important; }
-section.ron-pdoc-panel > h2 { text-align:center !important; margin:0 0 18px !important; }
-section.ron-pdoc-panel .ron-pdoc-items.ancillary-gallery.documentation-grid { display:flex !important; flex-flow:row wrap !important; justify-content:center !important; align-items:flex-start !important; gap:16px !important; width:100% !important; max-width:100% !important; margin:0 auto !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile { flex:0 1 220px !important; display:flex !important; flex-direction:column !important; align-items:stretch !important; width:220px !important; max-width:100% !important; margin:0 !important; padding:0 !important; border:1px solid #e5e7eb !important; border-radius:13px !important; background:#fff !important; overflow:hidden !important; box-shadow:0 2px 9px rgba(0,0,0,.05) !important; color:#222 !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > a { box-sizing:border-box !important; display:flex !important; justify-content:center !important; align-items:center !important; width:100% !important; height:192px !important; min-height:0 !important; padding:9px !important; margin:0 !important; border:0 !important; background:#f7f7f7 !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > a > img { display:block !important; width:100% !important; max-width:100% !important; max-height:174px !important; height:100% !important; object-fit:contain !important; margin:0 auto !important; padding:0 !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption { display:block !important; width:100% !important; box-sizing:border-box !important; padding:10px 11px 12px !important; margin:0 !important; text-align:center !important; font-size:13px !important; line-height:1.4 !important; border:0 !important; background:#fff !important; color:#222 !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption .card-title { display:block !important; font-weight:650 !important; margin:0 !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption .card-detail-text, section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption .card-source { display:block !important; margin-top:5px !important; }
-section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile > figcaption a { display:inline !important; min-height:0 !important; width:auto !important; padding:0 !important; margin:0 !important; border:0 !important; background:none !important; text-decoration:underline !important; color:inherit !important; }
-@media(max-width:520px){section.ron-pdoc-panel{padding:14px !important;}section.ron-pdoc-panel .ron-pdoc-items figure.ancillary-figure.ron-pdoc-tile{flex-basis:210px !important; width:210px !important;}}
-</style>
-
-<style id="ron-museum-frame-v3-2010s-2010">
-/* RON-MUSEUM-FRAME-V3-2000S-2010 -- approved V3 presentation */
-body.ron-museum-v2 { margin:0; background:#f7f6f3; color:#222; font-family:system-ui,-apple-system,Segoe UI,sans-serif; text-align:center; font-size:15px;line-height:1.6; }
-body.ron-museum-v2 * {box-sizing:border-box}
-body.ron-museum-v2 .site-header {max-width:1180px;margin:auto;padding:24px 18px 0}
-body.ron-museum-v2 .top-nav {display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:10px auto 20px}
-body.ron-museum-v2 .top-nav .nav-pill,body.ron-museum-v2 .work-sequence-nav .nav-pill {border:1px solid #dadde2;border-radius:99px;padding:8px 14px;font-size:13px;text-decoration:none;background:white;color:#222}
-body.ron-museum-v2 main.work-layout {width:100%;max-width:1180px;margin:auto;padding:0 18px 38px;display:block}
-body.ron-museum-v2 .ron-museum-hero {display:block;width:100%;max-width:1080px;margin:25px auto;padding:38px 28px;background:#fff;border:1px solid #ccc2b1;outline:1px solid #eae5db;outline-offset:-11px;border-radius:3px;box-shadow:0 15px 35px #473b2712;text-align:center}
-body.ron-museum-v2 .ron-museum-hero h1 {font-family:Georgia,serif;font-weight:400;font-size:clamp(32px,5vw,47px);line-height:1.2;margin:0 0 24px}
-body.ron-museum-v2 .ron-museum-hero .work-hero-link {display:inline-flex;max-width:100%;margin:0 auto 25px;padding:11px;background:#f6f3ec;border:1px solid #bfb9ad;box-shadow:0 1px 5px rgba(30,25,18,.12),0 7px 18px rgba(30,25,18,.045);line-height:0;text-decoration:none;align-items:center;justify-content:center}
-body.ron-museum-v2 .ron-museum-hero figure.hero-card {border:0!important;background:transparent!important;box-shadow:none!important;margin:0 auto 8px!important;padding:0!important;overflow:visible!important}
-body.ron-museum-v2 .ron-museum-hero .work-hero {display:block;width:auto;max-width:100%;height:auto;max-height:760px;object-fit:contain;margin:0;border:1px solid rgba(70,63,52,.14)}
-body.ron-museum-v2 .ron-museum-hero .work-meta {max-width:850px;margin:0 auto;padding:0;list-style:none;line-height:1.95;text-align:center;display:block}
-body.ron-museum-v2 .ron-museum-hero .work-meta li {display:block;margin:0;padding:0;text-align:center}
-body.ron-museum-v2 main.work-layout > section.section-block {max-width:1080px;width:100%;margin:25px auto;padding:26px 24px;background:#fff;border:1px solid #e1e4e8;border-radius:18px;box-shadow:0 5px 18px #00000008;text-align:center}
-body.ron-museum-v2 main.work-layout > section.section-block > h2 {font-family:Georgia,serif;font-weight:400;font-size:23px;margin:0 0 18px}
-body.ron-museum-v2 .ron-pdoc-panel figure {width:220px;max-width:100%;flex:0 0 220px;margin:0}
-body.ron-museum-v2 .ron-pdoc-panel figure img {max-width:100%;object-fit:contain}
-body.ron-museum-v2 .ron-pdoc-panel :is(.gallery-grid,.grid4,.grid6,.gallery,.ron-pdoc-gallery) {display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
-body.ron-museum-v2 .ron-museum-v2-footer {font-size:14px;color:#777;margin:42px auto 5px;padding:25px 0;border-top:1px solid #e2e4e8}
-body.ron-museum-v2 main.work-layout > section.section-block:not(:has(img,figure,video,iframe,a,li,p,blockquote,div)) {display:none}
-@media(max-width:580px){body.ron-museum-v2 .ron-museum-hero,body.ron-museum-v2 main.work-layout > section.section-block{padding:20px 12px}body.ron-museum-v2 .ron-museum-hero .work-hero-link{padding:7px}}
-/* Locked Museum Frame V2: outer sections and hero have identical 1080px ceiling. */
-body.ron-museum-v2 main.work-layout > section.section-block,
-body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel,
-body.ron-museum-v2 main.work-layout > section[data-role="cultural-artistic-references"],
-body.ron-museum-v2 main.work-layout > section[data-role="reference-materials"],
-body.ron-museum-v2 main.work-layout > section[data-role="artist-created-graphic-designs"],
-body.ron-museum-v2 main.work-layout > section[data-role="work-in-progress"],
-body.ron-museum-v2 main.work-layout > section[data-role="photo-gallery"] {
- width:100% !important;max-width:1080px !important;box-sizing:border-box !important;
- margin-left:auto !important;margin-right:auto !important;
-}
-body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel .ron-pdoc-items,
-body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel .documentation-grid {
- display:flex !important;flex-flow:row wrap !important;justify-content:center !important;gap:16px !important;
-}
-body.ron-museum-v2 main.work-layout > section.ron-pdoc-panel figure.ron-pdoc-tile {
- flex:0 1 220px !important;width:220px !important;max-width:100% !important;
-}
-
-/* Related Works gallery; outer section width matches Museum Frame hero. */
-body.ron-museum-v2 main.work-layout > section.ron-related-panel{width:100%!important;max-width:1080px!important;box-sizing:border-box!important;margin:25px auto!important}
-body.ron-museum-v2 .ron-related-gallery{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:18px;align-items:flex-start}
-body.ron-museum-v2 .ron-related-tile{flex:0 0 220px;max-width:100%;margin:0;padding:12px;border:1px solid #e0e0e0;background:#fafafa;border-radius:12px}
-body.ron-museum-v2 .ron-related-tile img{display:block;width:100%;height:175px;object-fit:contain}
-body.ron-museum-v2 .ron-related-tile figcaption{font-size:14px;margin-top:9px;line-height:1.35}
-body.ron-museum-v2 .ron-related-tile a{color:inherit;text-decoration:none}
-body.ron-museum-v2 .ron-related-tile figcaption a{text-decoration:underline}
-body.ron-museum-v2 .ron-related-subsection h3 {font-family:Georgia,serif;font-size:18px;font-weight:400;margin:12px 0 17px}
-body.ron-museum-v2 .ron-related-tile {padding:0!important;overflow:hidden!important;background:#fff!important;border:1px solid #ded9d0!important;box-shadow:0 2px 8px #0000000b!important}
-body.ron-museum-v2 .ron-related-tile > a {display:flex;align-items:center;justify-content:center;height:192px;padding:9px;background:#f7f7f7}
-body.ron-museum-v2 .ron-related-tile figcaption {box-sizing:border-box;border-top:1px solid #ece9e3!important;margin:0!important;padding:10px 10px 12px!important;background:#fff}
-body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:has(> figure:nth-child(4)) > figure {flex:0 1 180px!important;width:180px!important;max-width:180px!important}
-body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:has(> figure:nth-child(4)) > figure img {max-height:142px!important}
-body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure {flex:0 1 265px!important;width:265px!important;max-width:265px!important}
-body.ron-museum-v2 section[data-role="cultural-artistic-references"] .ron-pdoc-items:not(:has(> figure:nth-child(4))) > figure img {max-height:200px!important}
-</style>
-</head>
-<body class="ron-museum-v2">
-  <header class="site-header">
-    
-    <nav class="top-nav">
-      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s.html">2010s</a>
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+.topnav .pill,.sequence .pill{display:inline-flex;align-items:center;justify-content:center;border:1px solid #dadde2;border-radius:99px;padding:8px 14px;text-decoration:none;background:white;font-size:13px}
+.sequence{margin:30px auto 10px}.sequence-inner{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.metadata li{margin:0}
+.panel{display:block}.panel h2{margin-bottom:18px}.panel p{line-height:1.6}
+.site-footer{text-align:center;color:#777;font-size:14px;padding:25px 0;margin:42px auto 5px}
+@media(max-width:580px){.site-header{padding:14px 10px 0}.sequence-inner{flex-direction:column;align-items:stretch}}
+</style></head>
+<body class="">
+<header class="site-header">
+<nav class="topnav">
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s.html">2010s</a>
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
-    <nav class="top-nav year-return-nav">
-      <a class="nav-pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2010/index.html">← Return to 2010</a>
-    </nav>
+<nav class="topnav">
+<a class="pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2010/index.html">← Return to 2010</a>
+</nav>
 </header>
-
-  <main class="work-layout">
-<section class="ron-museum-hero">
+<main class="wrapper">
+<section class="hero">
 <h1>Pubescent Pop Artist – Blue on Red 2</h1>
-    <figure class="hero-card">
-      <a class="work-hero-link" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-2%2Fmain%2FRE-000987-Pubescent-Pop-Artist-Blue-on-Red-2.png" target="_blank" rel="noopener noreferrer">
-<img
-        src="https://raw.githubusercontent.com/ronenglish-archive/Painting-Heroes-2/main/RE-000987-Pubescent-Pop-Artist-Blue-on-Red-2.png"
-        alt="Pubescent Pop Artist – Blue on Red 2"
-        class="work-hero"
-        loading="lazy"
-      />
+<figure class="hero-card">
+<a class="painting-mat" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-2%2Fmain%2FRE-000987-Pubescent-Pop-Artist-Blue-on-Red-2.png" rel="noopener noreferrer" target="_blank">
+<img alt="Pubescent Pop Artist – Blue on Red 2" class="mainpainting" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/Painting-Heroes-2/main/RE-000987-Pubescent-Pop-Artist-Blue-on-Red-2.png"/>
 </a>
-    </figure>
-
-    <ul class="work-meta" data-work-id="RE-000987">
-      <li><strong>Title:</strong> Pubescent Pop Artist – Blue on Red 2</li>
-      <li><strong>Date:</strong> 2010</li>
-      <li><strong>Medium:</strong> Oil on canvas</li>
-      <li><strong>Dimensions:</strong> 24 × 36 inches</li>
-      <li><strong>Work ID:</strong> RE-000987</li>
-      <li><strong>Signature:</strong> No signature observed in available documentation.</li>
-    </ul>
+</figure>
+<ul class="metadata" data-work-id="RE-000987">
+<li><strong>Title:</strong> Pubescent Pop Artist – Blue on Red 2</li>
+<li><strong>Date:</strong> 2010</li>
+<li><strong>Medium:</strong> Oil on canvas</li>
+<li><strong>Dimensions:</strong> 24 × 36 inches</li>
+<li><strong>Work ID:</strong> RE-000987</li>
+<li><strong>Signature:</strong> No signature observed in available documentation.</li>
+</ul>
 </section>
-
-<section class="section-block">
-      <h2>Exhibitions</h2>
-      <p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p>
-    </section>
-
-<section class="section-block">
-      <h2>Notes</h2>
-      <p>The artist&rsquo;s son is depicted in this work.</p>
-    </section>
-
-<section class="section-block ron-pdoc-panel" data-role="cultural-artistic-references">
+<section class="panel">
+<h2>Exhibitions</h2>
+<p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p>
+</section>
+<section class="panel">
+<h2>Notes</h2>
+<p>The artist’s son is depicted in this work.</p>
+</section>
+<section class="panel ron-pdoc-panel" data-role="cultural-artistic-references">
 <h2>Cultural &amp; Artistic References</h2>
-<div class="ancillary-gallery documentation-grid ron-pdoc-items">
-<figure data-doc-role="cultural-artistic-references" class="ancillary-figure ron-pdoc-tile">
-          <a href="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/Web-Documentation2/in-the-future-andy-warhol.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/Web-Documentation2/in-the-future-andy-warhol.jpg" alt="Andy Warhol" loading="lazy" />
-          </a>
-          <figcaption>
-            <span class="card-title">Andy Warhol</span>
-            <span class="card-source">Public domain image.</span>
-          </figcaption>
-        </figure>
+<div class="cultural-large">
+<figure class="tile" data-doc-role="cultural-artistic-references">
+<a href="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/Web-Documentation2/in-the-future-andy-warhol.jpg" rel="noopener noreferrer" target="_blank">
+<span class="tileimg"><img alt="Andy Warhol" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/Web-Documentation2/in-the-future-andy-warhol.jpg"/></span>
+</a>
+<div class="tilecaption">
+<span class="card-title">Andy Warhol</span>
+<span class="card-source">Public domain image.</span>
+</div>
+</figure>
 </div>
 </section>
-
-
-
-
-    
 <!-- WORK-SEQUENCE-NAV-START -->
-<nav class="top-nav work-sequence-nav" aria-label="Artwork sequence navigation">
-  <a class="nav-pill sequence-pill prev-work" href="Pubescent-Pop-Artist-Blue-on-Red.html">&larr; Previous: Pubescent Pop Artist Blue on Red</a>
-  <a class="nav-pill sequence-pill next-work" href="Pubescent-Pop-Artist-Blue-on-Red-3.html">Next: Pubescent Pop Artist Blue on Red 3 &rarr;</a>
+<nav aria-label="Artwork sequence navigation" class="topnav">
+<a class="pill sequence-pill prev-work" href="Pubescent-Pop-Artist-Blue-on-Red.html">← Previous: Pubescent Pop Artist Blue on Red</a>
+<a class="pill sequence-pill next-work" href="Pubescent-Pop-Artist-Blue-on-Red-3.html">Next: Pubescent Pop Artist Blue on Red 3 →</a>
 </nav>
 <!-- WORK-SEQUENCE-NAV-END -->
-
 </main>
-<footer class="site-footer ron-published-footer-center">Published via GitHub Pages<br>for long-term public access.</footer>
+<footer class="site-footer ron-published-footer-center">Published via GitHub Pages<br/>for long-term public access.</footer>
 </body>
 </html>
-
-
