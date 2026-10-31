@@ -61,17 +61,17 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0} h1{font-size:clamp(
 .work-documentary .tile{flex:0 0 220px;max-width:220px}
 .work-documentary .tileimg{height:190px}
 .work-documentary .tilesub{font-size:12px;line-height:1.45}
-.related-gallery>.tile,.ron-related-gallery>.ron-related-tile{box-sizing:border-box;flex:0 0 220px;width:220px;max-width:220px;min-width:0;margin:0;border:1px solid #ded9d0;border-radius:12px;box-shadow:0 2px 8px #0000000b;overflow:hidden;background:#fff}
+.related-gallery>.tile,.ron-related-gallery>.ron-related-tile{box-sizing:border-box;flex:0 1 265px;width:265px;max-width:265px;min-width:0;margin:0;border:1px solid #ded9d0;border-radius:12px;box-shadow:0 2px 8px #0000000b;overflow:hidden;background:#fff}
 .related-gallery>.tile .tileimg{height:192px}.ron-related-gallery>.ron-related-tile>a{display:flex;align-items:center;justify-content:center;padding:10px;min-height:192px;box-sizing:border-box}.ron-related-gallery>.ron-related-tile>a img{display:block;max-width:100%;width:auto;height:auto;max-height:192px;object-fit:contain;margin:0 auto}
 .related-gallery>.tile .tilecaption,.ron-related-gallery>.ron-related-tile>figcaption{border-top:1px solid #ece9e3;background:#fff;padding:10px 10px 12px;line-height:1.45;overflow-wrap:anywhere}
 .related-gallery>.tile .tilename,.ron-related-gallery>.ron-related-tile>figcaption a{font-weight:600}
 /* Cultural references: one to three can be larger; four or more remain compact. */
-.cultural-large>.tile{flex:0 1 265px;max-width:265px;width:100%}
+.cultural-large>.tile{flex:0 1 220px;max-width:220px;width:100%}
 .cultural-large,.cultural-compact{display:flex;justify-content:center;flex-wrap:wrap;align-items:stretch;gap:15px;margin:0 auto}
 .cultural-compact>.tile{flex:0 1 180px;max-width:180px;width:100%}
-.cultural-large .tileimg{height:200px}.cultural-compact .tileimg{height:142px}
+.cultural-large .tileimg{height:200px}.cultural-compact .tileimg{height:142px}.cultural-compact>.tile .tilecaption{padding:6px 7px 8px;line-height:1.3}.cultural-compact>.tile .card-title{font-size:12px;line-height:1.3}.cultural-compact>.tile .card-source{font-size:11px;line-height:1.3;margin-top:3px}
 @media(max-width:580px){.work-documentary .tile{flex-basis:min(220px,100%)}}
-@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.two,.panel-artworks.three,.panel-artworks.four{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-artworks.three>.painting-mat:first-child{width:min(100%,350px)}.cultural-large>.tile,.cultural-compact>.tile{flex-basis:min(100%,180px)}.related-gallery>.tile,.ron-related-gallery>.ron-related-tile{flex-basis:min(220px,100%);max-width:min(220px,100%)}}
+@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.two,.panel-artworks.three,.panel-artworks.four{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-artworks.three>.painting-mat:first-child{width:min(100%,350px)}.cultural-large>.tile,.cultural-compact>.tile{flex-basis:min(100%,180px)}.related-gallery>.tile,.ron-related-gallery>.ron-related-tile{flex-basis:min(265px,100%);max-width:min(265px,100%)}}
 
 
 /* V3 ordinary V2-origin navigation/metadata adapter; one authoritative rule per role. */
