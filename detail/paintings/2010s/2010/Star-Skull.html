@@ -60,14 +60,14 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0} h1{font-size:clamp(
 .work-documentary .tile{flex:0 0 220px;max-width:220px}
 .work-documentary .tileimg{height:190px}
 .work-documentary .tilesub{font-size:12px;line-height:1.45}
-.related-gallery>.tile{flex:0 1 220px;width:220px;max-width:100%;border:1px solid #ded9d0;border-radius:12px;box-shadow:0 2px 8px #0000000b}
+.related-gallery>.tile{flex:0 1 265px;width:265px;max-width:100%;border:1px solid #ded9d0;border-radius:12px;box-shadow:0 2px 8px #0000000b}
 .related-gallery>.tile .tileimg{height:192px}
 .related-gallery>.tile .tilecaption{border-top:1px solid #ece9e3;background:#fff;padding:10px 10px 12px}
 .related-gallery>.tile .tilename{font-weight:600}
 /* Cultural references: one to three can be larger; four or more remain compact. */
 .cultural-large>.tile{flex:0 1 265px;max-width:265px;width:100%}
 .cultural-large,.cultural-compact{display:flex;justify-content:center;flex-wrap:wrap;align-items:stretch;gap:15px;margin:0 auto}
-.cultural-compact>.tile{flex:0 1 180px;max-width:180px;width:100%}
+.cultural-compact>.tile{flex:0 0 180px;max-width:180px;width:180px;min-width:0;margin:0;box-sizing:border-box}
 .cultural-large .tileimg{height:200px}.cultural-compact .tileimg{height:142px}
 @media(max-width:580px){.work-documentary .tile{flex-basis:min(220px,100%)}}
 @media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.two,.panel-artworks.three,.panel-artworks.four{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-artworks.three>.painting-mat:first-child{width:min(100%,350px)}.cultural-large>.tile,.cultural-compact>.tile{flex-basis:min(100%,180px)}.related-gallery>.tile{flex-basis:min(100%,210px)}}
@@ -82,7 +82,22 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0} h1{font-size:clamp(
 .panel{display:block}.panel h2{margin-bottom:18px}.panel p{line-height:1.6}
 .site-footer{text-align:center;color:#777;font-size:14px;padding:25px 0;margin:42px auto 5px}
 @media(max-width:580px){.site-header{padding:14px 10px 0}.sequence-inner{flex-direction:column;align-items:stretch}}
-</style></head>
+</style><style id="ron-star-skull-panel-grid-standard-v1">
+/* Painting Museum Frame V3 - Star Skull documentary layouts */
+#related-works-by-ron-english .related-gallery{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center;gap:15px;margin:0 auto}
+#related-works-by-ron-english .related-gallery>.tile{box-sizing:border-box;flex:0 1 265px;width:265px;max-width:100%;margin:0}
+#related-works-by-ron-english .related-gallery .tileimg{display:flex;align-items:center;justify-content:center;overflow:hidden}
+#related-works-by-ron-english .related-gallery .tileimg img{max-width:100%;max-height:100%;object-fit:contain}
+[data-role="cultural-artistic-references"] .cultural-compact{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:15px;margin:0 auto}
+[data-role="cultural-artistic-references"] .cultural-compact>figure.tile{box-sizing:border-box;flex:0 0 180px;width:180px;max-width:180px;min-width:0;margin:0}
+[data-role="cultural-artistic-references"] .cultural-compact .tileimg{height:142px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+[data-role="cultural-artistic-references"] .cultural-compact .tileimg img{max-width:100%;max-height:100%;object-fit:contain}
+[data-role="cultural-artistic-references"] .cultural-compact .tilecaption{padding:6px 7px 8px;line-height:1.3}
+[data-role="cultural-artistic-references"] .cultural-compact .card-title{font-size:12px;line-height:1.3}
+[data-role="cultural-artistic-references"] .cultural-compact .card-source{font-size:11px;line-height:1.3;margin-top:3px}
+@media(max-width:420px){[data-role="cultural-artistic-references"] .cultural-compact>figure.tile{flex-basis:min(180px,100%)}}
+</style>
+</head>
 <body class="">
 <header class="site-header">
 <nav class="topnav">
@@ -117,6 +132,12 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0} h1{font-size:clamp(
 <li><strong>Provenance:</strong> Artist's Personal Collection</li>
 </ul>
 </section>
+<section class="panel" id="related-works-by-ron-english"><h2>Related Works by Ron English</h2><h3>Used in the Creation of This Painting</h3><div class="related-gallery"><figure class="tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Skeletons/Dead%20Toy%20Soldier%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Skeletons/Dead%20Toy%20Soldier%20ORIGINAL.jpg" alt="Dead Toy Soldier"/></span></a><div class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/skeletons/entries/re-016569.html"><em>Dead Toy Soldier</em></a></div></figure>
+<figure class="tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Skeletons/Mickey%20Skull%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Skeletons/Mickey%20Skull%20ORIGINAL.jpg" alt="Mickey Skeleton"/></span></a><div class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/mice/entries/re-014716.html"><em>Mickey Skeleton</em></a></div></figure>
+<figure class="tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260614%20%2825%29.jpg?v=20260614c" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260614%20%2825%29.jpg?v=20260614c" alt="Fred Flintstone Skeleton"/></span></a><div class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/Sketches/pop-culture-public-figures/works/re-013836.html"><em>Fred Flintstone Skeleton</em></a></div></figure>
+<figure class="tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Barney%20Grin%20side%20ORIGINAL%202.jpg" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-grins/images/Sketches/grins/Barney%20Grin%20side%20ORIGINAL%202.jpg" alt="Barney Grin Version 1 Side 2"/></span></a><div class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-grins/Sketches/grins/works/re-013655--barney-grin-version-1-side-2.html"><em>Barney Grin Version 1 Side 2</em></a></div></figure>
+<figure class="tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/mice/Mousetrap%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Small%20Mammals/mice/Mousetrap%20ORIGINAL.jpg" alt="Mousetrap"/></span></a><div class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/mice/entries/re-001738.html"><em>Mousetrap</em></a></div></figure>
+<figure class="tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(76).jpg?v=20260614e" target="_blank" rel="noopener noreferrer"><span class="tileimg"><img loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20(76).jpg?v=20260614e" alt="Yin Yang X-Ray"/></span></a><div class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/kursed/yin-yang-x-ray/index.html"><em>Yin Yang X-Ray</em></a></div></figure></div></section>
 <section class="panel ron-pdoc-panel" data-role="cultural-artistic-references">
 <h2>Cultural &amp; Artistic References</h2>
 <div class="cultural-compact">
@@ -138,6 +159,7 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0} h1{font-size:clamp(
 </figure>
 </div>
 </section>
+
 <!-- WORK-SEQUENCE-NAV-START -->
 <nav aria-label="Artwork sequence navigation" class="topnav">
 <a class="pill sequence-pill prev-work" href="Slash-RnFR.html">← Previous: Slash R'nF'R</a>
