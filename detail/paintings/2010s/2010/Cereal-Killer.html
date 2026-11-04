@@ -105,7 +105,14 @@ figure.tile,figure.ron-related-tile{margin:0}
 @media(max-width:580px){.site-header{padding:14px 10px 0}.ron-related-gallery>.ron-related-tile{flex-basis:min(100%,265px)}}
 @media(min-width:801px){.site-header{padding-top:2px}.site-footer{margin-top:6px;padding-top:12px}}
 
-</style></head>
+/* Targeted approved Related Works cards: 265px, contained image and independent links. */
+.ron-related-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:15px;margin:0 auto}
+.ron-related-subsection{margin:18px auto 0;text-align:center}.ron-related-subsection h3{font-family:Georgia,serif;font-size:19px;font-weight:400;margin:8px 0 18px}
+.ron-related-gallery>.ron-related-tile{box-sizing:border-box;display:flex;flex-direction:column;flex:0 1 265px;width:100%;max-width:265px;min-width:0;margin:0;overflow:hidden;border:1px solid #ded9d0;border-radius:12px;background:#fff;box-shadow:0 2px 8px #0000000b}
+.ron-related-tile>a{display:flex;align-items:center;justify-content:center;height:192px;padding:9px;background:#f6f6f6}
+.ron-related-tile img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.ron-related-tile figcaption{border-top:1px solid #ece9e3;padding:10px 10px 12px;font-size:13.91px;line-height:1.45;font-weight:650}
+@media(max-width:800px){.ron-related-tile figcaption{font-size:13px}}</style></head>
 <body class="">
 <header class="site-header">
 <nav class="topnav">
@@ -173,7 +180,7 @@ figure.tile,figure.ron-related-tile{margin:0}
 </figure>
 </div>
 </section>
-<!-- WORK-SEQUENCE-NAV-START -->
+<section class="panel" data-role="related-works"><h2>Related Works by Ron English</h2><div class="ron-related-subsection"><h3>Used in the Creation of This Painting</h3><div class="ron-related-gallery"><figure class="ron-related-tile"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-cereal-killers/main/images/Sketches/cereal-killers/Cereal%20Killer%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-cereal-killers/main/images/Sketches/cereal-killers/Cereal%20Killer%20ORIGINAL.jpg" alt="Cereal Killer" loading="lazy" data-related-artwork-thumb="true"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-cereal-killers/Sketches/cereal-killers/fat-tony/cereal-killer/index.html" target="_blank" rel="noopener noreferrer">Cereal Killer</a></figcaption></figure></div></div></section><!-- WORK-SEQUENCE-NAV-START -->
 <nav aria-label="Artwork sequence navigation" class="topnav">
 <a class="pill sequence-pill prev-work" href="Camo-Deer-on-Ice.html">← Previous: Camo Deer on Ice</a>
 <a class="pill sequence-pill next-work" href="Comic-Slash.html">Next: Comic Slash →</a>
