@@ -105,7 +105,15 @@ figure.tile,figure.ron-related-tile{margin:0}
 @media(max-width:580px){.site-header{padding:14px 10px 0}.ron-related-gallery>.ron-related-tile{flex-basis:min(100%,265px)}}
 @media(min-width:801px){.site-header{padding-top:2px}.site-footer{margin-top:6px;padding-top:12px}}
 
-</style></head>
+/* Approved 265px painting Related Works cards; applies only to the new panel. */
+section[data-role="related-works"] .ron-related-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:15px;margin:0 auto}
+section[data-role="related-works"] .ron-related-subsection{margin:18px auto 0;text-align:center}
+section[data-role="related-works"] .ron-related-subsection h3{font-family:Georgia,serif;font-size:19px;font-weight:400;margin:8px 0 18px}
+section[data-role="related-works"] .ron-related-gallery>.ron-related-tile{box-sizing:border-box;display:flex;flex-direction:column;flex:0 1 265px;width:100%;max-width:265px;min-width:0;margin:0;overflow:hidden;border:1px solid #ded9d0;border-radius:12px;background:#fff;box-shadow:0 2px 8px #0000000b}
+section[data-role="related-works"] .ron-related-tile>a{display:flex;align-items:center;justify-content:center;height:192px;padding:9px;background:#f6f6f6}
+section[data-role="related-works"] .ron-related-tile img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+section[data-role="related-works"] .ron-related-tile figcaption{border-top:1px solid #ece9e3;padding:10px 10px 12px;font-size:13.91px;line-height:1.45;font-weight:650}
+@media(max-width:800px){section[data-role="related-works"] .ron-related-tile figcaption{font-size:13px}}</style></head>
 <body class="">
 <header class="site-header">
 <nav class="topnav">
@@ -145,9 +153,9 @@ figure.tile,figure.ron-related-tile{margin:0}
 <p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p>
 <p><em>Status Factory – The Art of Ron English</em>, Frank M. Doyle Arts Pavilion (Orange Coast College), Costa Mesa, California, US, November 12–December 17, 2010.</p>
 </section>
-<!-- WORK-SEQUENCE-NAV-START -->
+
 <section class="panel"><h2>Notes</h2><p>The artist's son is depicted in this painting.</p></section>
-<nav aria-label="Work sequence" class="sequence">
+<section class="panel" data-role="related-works"><h2>Related Works by Ron English</h2><div class="ron-related-subsection"><h3>Used in the Creation of This Painting</h3><div class="ron-related-gallery"><figure class="ron-related-tile"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kursed/Kursed%20Kids%20Mars%20Alien%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kursed/Kursed%20Kids%20Mars%20Alien%20ORIGINAL.jpg" alt="Kursed Kids Mars Alien" loading="lazy" data-related-artwork-thumb="true"/></a><figcaption data-related-caption="true"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/kursed/kursed-kids-mars-alien/index.html" target="_blank" rel="noopener noreferrer">Kursed Kids Mars Alien</a></figcaption></figure></div></div></section><!-- WORK-SEQUENCE-NAV-START --><nav aria-label="Work sequence" class="sequence">
 <a class="pill sequence-pill prev-work" href="Lady-Lick.html">← Previous: Lady Lick</a>
 <a class="pill sequence-pill next-work" href="Max-Warhol.html">Next: Max Warhol →</a>
 </nav>
