@@ -318,6 +318,60 @@
   .year-grid > .year-card { flex-basis: calc((100% - 14px) / 2) !important; width: calc((100% - 14px) / 2) !important; }
 }
 </style>
+<style id="ron-paintings-2010s-decade-compact-hotfix-v1">
+/* Owner-approved 2010s decade hotfix: force exact compact year-card sizing to match the other decade indexes. */
+body.decade-overview-page .page-container .year-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 14px !important;
+  grid-template-columns: none !important;
+}
+body.decade-overview-page .page-container .year-grid > a.year-card,
+body.decade-overview-page .page-container section.year-grid > a.year-card,
+body.decade-overview-page .page-container .year-grid > a.year-card[role="listitem"] {
+  box-sizing: border-box !important;
+  flex: 0 0 230px !important;
+  width: 230px !important;
+  max-width: 230px !important;
+  min-width: 0 !important;
+}
+body.decade-overview-page .page-container .year-grid > a.year-card img,
+body.decade-overview-page .page-container section.year-grid > a.year-card img,
+body.decade-overview-page .page-container .year-grid > a.year-card[role="listitem"] img {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 140px !important;
+  min-height: 140px !important;
+  max-height: 140px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  padding: 8px !important;
+  background: #fff !important;
+}
+body.decade-overview-page .page-container .year-grid > a.year-card .year-card-body,
+body.decade-overview-page .page-container section.year-grid > a.year-card .year-card-body {
+  padding: 9px !important;
+  text-align: center !important;
+}
+body.decade-overview-page .page-container .year-grid > a.year-card .year-card-title,
+body.decade-overview-page .page-container section.year-grid > a.year-card .year-card-title {
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+}
+@media (max-width: 560px) {
+  body.decade-overview-page .page-container .year-grid > a.year-card,
+  body.decade-overview-page .page-container section.year-grid > a.year-card,
+  body.decade-overview-page .page-container .year-grid > a.year-card[role="listitem"] {
+    flex-basis: calc((100% - 14px) / 2) !important;
+    width: calc((100% - 14px) / 2) !important;
+    max-width: calc((100% - 14px) / 2) !important;
+  }
+}
+</style>
 </head>
 
 <body class="decade-overview-page">
