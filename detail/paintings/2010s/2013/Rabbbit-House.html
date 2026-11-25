@@ -179,7 +179,17 @@ section[data-role="related-works"] .ron-related-gallery > .ron-related-tile > fi
 section[data-role="cultural-references"] .tilecaption, section[data-role="cultural-references"] .tilecaption *,
 section[data-role="cultural-references"] figcaption, section[data-role="cultural-references"] figcaption *,
 section[data-role="cultural-artistic-references"] .tilecaption, section[data-role="cultural-artistic-references"] .tilecaption *,
-section[data-role="cultural-artistic-references"] figcaption, section[data-role="cultural-artistic-references"] figcaption * { font-size: 10px; }</style>
+section[data-role="cultural-artistic-references"] figcaption, section[data-role="cultural-artistic-references"] figcaption * { font-size: 10px; }
+/* Reference Set: readable proportional card for this legacy compact page. */
+.reference-set-gallery{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+.reference-set-card{box-sizing:border-box;width:220px;max-width:100%;min-width:0;margin:0;border:1px solid #e3e5e8;border-radius:7px;overflow:hidden;background:#fff}
+.reference-set-card>a{display:block;text-decoration:none}
+.reference-set-image{height:158px;padding:9px;background:#f6f6f6;display:flex;align-items:center;justify-content:center}
+.reference-set-image img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.reference-set-caption{padding:7px 9px 9px;overflow-wrap:anywhere}
+.reference-set-title{display:block;font-size:13px;font-weight:650;line-height:1.35}
+.reference-set-credit{display:block;font-size:11px;color:#687080;line-height:1.35;margin-top:3px}
+</style>
 <!-- RON-MUSEUM-FRAME-V3-100-2010S-490-GUARDED-V1 END -->
 
 
@@ -227,16 +237,20 @@ section[data-role="cultural-artistic-references"] figcaption, section[data-role=
 <p>Ron English, <em>Death and the Eternal Forever</em> (Korero Press, 2014), pp. 16, 75. ISBN 978-0957664920.</p>
 <p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 371. ISBN 978-2374950938.</p>
 </section>
+<section class="panel" data-role="notes">
+<h2>Notes</h2>
+<p>Also known as <em>Rabbbit Falls</em>.</p>
+</section>
 <section class="panel ron-pdoc-panel" data-role="reference-materials">
 <h2>Reference Materials</h2>
-<div class="work-documentary">
-<figure class="tile" data-doc-role="reference-materials">
+<div class="reference-set-gallery">
+<figure class="reference-set-card" data-doc-role="reference-materials">
 <a href="../../../../images/Paintings/Models/Rabbbit-House-STUDY.jpg" rel="noopener noreferrer" target="_blank">
-<span class="tileimg"><img alt="Reference set" loading="lazy" src="../../../../images/Paintings/Models/Rabbbit-House-STUDY.jpg"/></span>
+<span class="reference-set-image"><img alt="Reference set" loading="lazy" src="../../../../images/Paintings/Models/Rabbbit-House-STUDY.jpg"/></span>
 </a>
-<div class="tilecaption">
-<span class="card-title">Reference Set</span>
-<span class="card-detail-text">Assembled and photographed by Ron English.</span>
+<div class="reference-set-caption">
+<span class="reference-set-title">Reference Set</span>
+<span class="reference-set-credit">Assembled and photographed by Ron English.</span>
 </div>
 </figure>
 </div>
