@@ -6,11 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Yin Yang Popaganda – Ron English Catalogue Raisonné</title>
 <meta content="RE-001017" name="work-id"/>
-
-
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
-
-
 <style>
 /* Museum Frame: static painting detail layout. */
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -56,13 +52,20 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 .video-tile figcaption{padding:10px 8px 12px;border-top:1px solid #e8e8e8;font-size:13px}
 .site-footer{max-width:680px;font-size:14px;color:#777;margin:24px auto 5px;padding:16px 0;border-top:1px solid #e2e4e8}
 @media(max-width:580px){.wrapper,.site-header{padding:15px 10px}.site-header{padding-bottom:0}.hero,.panel{padding:20px 12px}.site-footer{margin-left:10px;margin-right:10px}}
+
+/* Reference Materials: documented Reference Composition subtype (V6 section 5). */
+[data-reference-kind="composition"] .tileimg{height:145px}
+[data-reference-kind="composition"] .tilecaption{padding:7px 9px 9px}
+[data-reference-kind="composition"] .card-title{line-height:1.35}
+[data-reference-kind="composition"] .card-detail-text{line-height:1.35;margin-top:3px}
+
+/* Common optional components: multipanel artwork and documented reference sizing. */
+.panel-artworks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 auto 24px;align-items:center;justify-items:center}.panel-component{margin:0;width:100%;min-width:0}.panel-component>.painting-mat{width:100%;margin:0;min-width:0}.panel-component .mainpainting{width:100%;height:auto;max-height:550px;object-fit:contain}.panel-artworks.three>.panel-component:first-child{grid-column:1/-1;width:min(100%,460px)}.panel-artworks.side-by-side{grid-template-columns:repeat(3,minmax(0,1fr))}.panel-component figcaption{margin-top:6px;overflow-wrap:anywhere}
+[data-reference-size="220"]{flex-basis:220px;width:220px}[data-reference-size="220"] .tileimg{height:158px}[data-reference-size="220"] .card-detail-text{font-size:11px;line-height:1.35;margin-top:3px}[data-reference-size="220"] .card-title{line-height:1.35}
+@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.three>.panel-component:first-child{width:min(100%,350px)}}
 </style>
-
-
-
-
 </head>
-<body class="">
+<body>
 <header class="site-header">
 <nav class="topnav">
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
@@ -75,11 +78,11 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <nav class="topnav">
-<a class="pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2010/index.html">← Return to 2010</a>
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2010/index.html">← Return to 2010</a>
 </nav>
 </header>
-<main class="wrapper">
-<section class="hero">
+<main class="wrapper" id="catalogue-content">
+<section class="hero" id="artwork">
 <h1>Yin Yang Popaganda</h1>
 <figure class="hero-card">
 <a class="painting-mat" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-2%2Fmain%2FRE-001017-Yin-Yang-Popaganda.png" rel="noopener noreferrer" target="_blank">
@@ -87,28 +90,28 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 </a>
 </figure>
 <ul class="metadata" data-work-id="RE-001017">
-<li><strong>Title:</strong> Yin Yang Popaganda</li>
-<li><strong>Date:</strong> 2010</li>
-<li><strong>Medium:</strong> Oil on canvas</li>
-<li><strong>Dimensions:</strong> 84 × 60 inches</li>
-<li><strong>Work ID:</strong> RE-001017</li>
-<li><strong>Signature:</strong> No signature observed in available documentation.</li>
-<li><strong>Provenance:</strong> Private collection.</li>
+<li class="metaitem"><strong>Title:</strong> Yin Yang Popaganda</li>
+<li class="metaitem"><strong>Date:</strong> 2010</li>
+<li class="metaitem"><strong>Medium:</strong> Oil on canvas</li>
+<li class="metaitem"><strong>Dimensions:</strong> 84 × 60 inches</li>
+<li class="metaitem"><strong>Work ID:</strong> RE-001017</li>
+<li class="metaitem"><strong>Signature:</strong> No signature observed in available documentation.</li>
+<li class="metaitem"><strong>Provenance:</strong> Private collection.</li>
 </ul>
 </section>
-<section class="panel">
-<h2>Exhibitions</h2>
-<p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p>
-<p><em>Status Factory – The Art of Ron English</em>, Frank M. Doyle Arts Pavilion (Orange Coast College), Costa Mesa, California, US, November 12–December 17, 2010.</p>
-<p>Eternity Gallery, <em>Ron English at Art Wynwood 2019</em>, solo booth presentation at Art Wynwood, Miami, Florida, US, February 14–18, 2019.</p>
+<section class="panel ron-pdoc-panel" data-role="exhibitions" id="exhibitions">
+<h2>Exhibitions</h2><div class="source-section-content"><p><em>Status Factory</em>, Opera Gallery, New York, New York, US, September 12–October 29, 2010.</p><p><em>Status Factory – The Art of Ron English</em>, Frank M. Doyle Arts Pavilion (Orange Coast College), Costa Mesa, California, US, November 12–December 17, 2010.</p><p>Eternity Gallery, <em>Ron English at Art Wynwood 2019</em>, solo booth presentation at Art Wynwood, Miami, Florida, US, February 14–18, 2019.</p></div>
+
+
+
 </section>
 <!-- WORK-SEQUENCE-NAV-START -->
-<nav aria-label="Artwork sequence navigation" class="topnav">
-<a class="pill sequence-pill prev-work" href="Yin-Yang-Hurley-Shirt.html">← Previous: Yin Yang Hurley Shirt</a>
-<a class="pill sequence-pill next-work" href="Zephyr-Kursed.html">Next: Zephyr Kursed →</a>
+<nav aria-label="Artwork sequence navigation" class="sequence">
+<a class="pill" href="Yin-Yang-Hurley-Shirt.html">← Previous: Yin Yang Hurley Shirt</a>
+<a class="pill" href="Zephyr-Kursed.html">Next: Zephyr Kursed →</a>
 </nav>
 <!-- WORK-SEQUENCE-NAV-END -->
 </main>
-<footer class="site-footer ron-published-footer-center">Published via GitHub Pages<br/>for long-term public access.</footer>
+<footer class="site-footer">Published via GitHub Pages<br/>for long-term public access.</footer>
 </body>
 </html>

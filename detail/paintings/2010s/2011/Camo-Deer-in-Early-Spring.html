@@ -6,14 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Camo Deer in Early Spring – Ron English Catalogue Raisonné</title>
 <meta content="RE-001028" name="work-id"/>
-
-
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
-
-
-
-
-
 <style>
 /* Museum Frame: static painting detail layout. */
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -59,13 +52,20 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 .video-tile figcaption{padding:10px 8px 12px;border-top:1px solid #e8e8e8;font-size:13px}
 .site-footer{max-width:680px;font-size:14px;color:#777;margin:24px auto 5px;padding:16px 0;border-top:1px solid #e2e4e8}
 @media(max-width:580px){.wrapper,.site-header{padding:15px 10px}.site-header{padding-bottom:0}.hero,.panel{padding:20px 12px}.site-footer{margin-left:10px;margin-right:10px}}
+
+/* Reference Materials: documented Reference Composition subtype (V6 section 5). */
+[data-reference-kind="composition"] .tileimg{height:145px}
+[data-reference-kind="composition"] .tilecaption{padding:7px 9px 9px}
+[data-reference-kind="composition"] .card-title{line-height:1.35}
+[data-reference-kind="composition"] .card-detail-text{line-height:1.35;margin-top:3px}
+
+/* Common optional components: multipanel artwork and documented reference sizing. */
+.panel-artworks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 auto 24px;align-items:center;justify-items:center}.panel-component{margin:0;width:100%;min-width:0}.panel-component>.painting-mat{width:100%;margin:0;min-width:0}.panel-component .mainpainting{width:100%;height:auto;max-height:550px;object-fit:contain}.panel-artworks.three>.panel-component:first-child{grid-column:1/-1;width:min(100%,460px)}.panel-artworks.side-by-side{grid-template-columns:repeat(3,minmax(0,1fr))}.panel-component figcaption{margin-top:6px;overflow-wrap:anywhere}
+[data-reference-size="220"]{flex-basis:220px;width:220px}[data-reference-size="220"] .tileimg{height:158px}[data-reference-size="220"] .card-detail-text{font-size:11px;line-height:1.35;margin-top:3px}[data-reference-size="220"] .card-title{line-height:1.35}
+@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.three>.panel-component:first-child{width:min(100%,350px)}}
 </style>
-
-
-
-
 </head>
-<body class="">
+<body>
 <header class="site-header">
 <nav class="topnav">
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
@@ -78,11 +78,11 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <nav class="topnav">
-<a class="pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2011/index.html">← Return to 2011</a>
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2011/index.html">← Return to 2011</a>
 </nav>
 </header>
-<main class="wrapper">
-<section class="hero">
+<main class="wrapper" id="catalogue-content">
+<section class="hero" id="artwork">
 <h1>Camo Deer in Early Spring</h1>
 <figure class="hero-card">
 <a class="painting-mat" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-1%2Fmain%2FRE-001028-Camo-Deer-in-Early-Spring.png" rel="noopener noreferrer" target="_blank">
@@ -90,45 +90,45 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 </a>
 </figure>
 <ul class="metadata" data-work-id="RE-001028">
-<li><strong>Title:</strong> Camo Deer in Early Spring</li>
-<li><strong>Date:</strong> 2011</li>
-<li><strong>Medium:</strong> Oil on canvas</li>
-<li><strong>Dimensions:</strong> 36 × 48 inches</li>
-<li><strong>Work ID:</strong> RE-001028</li>
-<li><strong>Signature:</strong> No signature observed in available documentation.</li>
-<li><strong>Provenance:</strong> Artist's Personal Collection</li>
+<li class="metaitem"><strong>Title:</strong> Camo Deer in Early Spring</li>
+<li class="metaitem"><strong>Date:</strong> 2011</li>
+<li class="metaitem"><strong>Medium:</strong> Oil on canvas</li>
+<li class="metaitem"><strong>Dimensions:</strong> 36 × 48 inches</li>
+<li class="metaitem"><strong>Work ID:</strong> RE-001028</li>
+<li class="metaitem"><strong>Signature:</strong> No signature observed in available documentation.</li>
+<li class="metaitem"><strong>Provenance:</strong> Artist's Personal Collection</li>
 </ul>
 </section>
-<section class="panel">
-<h2>Exhibitions</h2>
-<p><em>Seasons In Supurbia</em>, Corey Helford Gallery, Culver City, California, US, November 19–December 10, 2011.</p>
-<p><em>Evolutionary Alternatives</em>, Tribeca Grand Hotel, New York, New York, US, November 19, 2014.</p>
+<section class="panel ron-pdoc-panel" data-role="exhibitions" id="exhibitions">
+<h2>Exhibitions</h2><div class="source-section-content"><p><em>Seasons In Supurbia</em>, Corey Helford Gallery, Culver City, California, US, November 19–December 10, 2011.</p><p><em>Evolutionary Alternatives</em>, Tribeca Grand Hotel, New York, New York, US, November 19, 2014.</p></div>
+
+
 </section>
-<section class="panel">
-<h2>Literature</h2>
-<p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 165. ISBN 978-2374950938.</p>
+<section class="panel ron-pdoc-panel" data-role="literature" id="literature">
+<h2>Literature</h2><div class="source-section-content"><p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 165. ISBN 978-2374950938.</p></div>
+
 </section>
-<section class="panel ron-pdoc-panel" data-role="reference-materials">
+<section class="panel ron-pdoc-panel" data-role="reference-materials" id="reference-materials">
 <h2>Reference Materials</h2>
 <div class="work-documentary">
-<figure class="tile" data-doc-role="reference-materials">
+<figure class="tile" data-doc-role="reference-materials" data-reference-kind="set">
 <a href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Models/Camo-Deer-in-Early-Spring%20STUDY.jpg" rel="noopener noreferrer" target="_blank">
 <span class="tileimg"><img alt="Ancillary documentation image" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-2010s/images/Paintings/Models/Camo-Deer-in-Early-Spring%20STUDY.jpg"/></span>
 </a>
-<div class="tilecaption">
+<figcaption class="tilecaption">
 <span class="card-title">Reference Set</span>
 <span class="card-detail-text">Assembled and photographed by Ron English.</span>
-</div>
+</figcaption>
 </figure>
 </div>
 </section>
 <!-- WORK-SEQUENCE-NAV-START -->
-<nav aria-label="Artwork sequence navigation" class="topnav">
-<a class="pill sequence-pill prev-work" href="Camo-Deer-in-Dead-of-Winter.html">← Previous: Camo Deer in Dead of Winter</a>
-<a class="pill sequence-pill next-work" href="Camo-Deer-in-Spring-Blossoms.html">Next: Camo Deer in Spring Blossoms →</a>
+<nav aria-label="Artwork sequence navigation" class="sequence">
+<a class="pill" href="Camo-Deer-in-Dead-of-Winter.html">← Previous: Camo Deer in Dead of Winter</a>
+<a class="pill" href="Camo-Deer-in-Spring-Blossoms.html">Next: Camo Deer in Spring Blossoms →</a>
 </nav>
 <!-- WORK-SEQUENCE-NAV-END -->
 </main>
-<footer class="site-footer ron-published-footer-center">Published via GitHub Pages<br/>for long-term public access.</footer>
+<footer class="site-footer">Published via GitHub Pages<br/>for long-term public access.</footer>
 </body>
 </html>

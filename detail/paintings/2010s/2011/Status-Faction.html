@@ -6,15 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Status Faction – Ron English Catalogue Raisonné</title>
 <meta content="RE-001083" name="work-id"/>
-
-
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
-
-
-
-
-
-
 <style>
 /* Museum Frame: static painting detail layout. */
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -60,13 +52,20 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 .video-tile figcaption{padding:10px 8px 12px;border-top:1px solid #e8e8e8;font-size:13px}
 .site-footer{max-width:680px;font-size:14px;color:#777;margin:24px auto 5px;padding:16px 0;border-top:1px solid #e2e4e8}
 @media(max-width:580px){.wrapper,.site-header{padding:15px 10px}.site-header{padding-bottom:0}.hero,.panel{padding:20px 12px}.site-footer{margin-left:10px;margin-right:10px}}
+
+/* Reference Materials: documented Reference Composition subtype (V6 section 5). */
+[data-reference-kind="composition"] .tileimg{height:145px}
+[data-reference-kind="composition"] .tilecaption{padding:7px 9px 9px}
+[data-reference-kind="composition"] .card-title{line-height:1.35}
+[data-reference-kind="composition"] .card-detail-text{line-height:1.35;margin-top:3px}
+
+/* Common optional components: multipanel artwork and documented reference sizing. */
+.panel-artworks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 auto 24px;align-items:center;justify-items:center}.panel-component{margin:0;width:100%;min-width:0}.panel-component>.painting-mat{width:100%;margin:0;min-width:0}.panel-component .mainpainting{width:100%;height:auto;max-height:550px;object-fit:contain}.panel-artworks.three>.panel-component:first-child{grid-column:1/-1;width:min(100%,460px)}.panel-artworks.side-by-side{grid-template-columns:repeat(3,minmax(0,1fr))}.panel-component figcaption{margin-top:6px;overflow-wrap:anywhere}
+[data-reference-size="220"]{flex-basis:220px;width:220px}[data-reference-size="220"] .tileimg{height:158px}[data-reference-size="220"] .card-detail-text{font-size:11px;line-height:1.35;margin-top:3px}[data-reference-size="220"] .card-title{line-height:1.35}
+@media(max-width:580px){.panel-artworks{gap:9px}.panel-artworks.three>.panel-component:first-child{width:min(100%,350px)}}
 </style>
-
-
-
-
 </head>
-<body class="">
+<body>
 <header class="site-header">
 <nav class="topnav">
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
@@ -79,11 +78,11 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 <a class="pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <nav class="topnav">
-<a class="pill year-return-pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2011/index.html">← Return to 2011</a>
+<a class="pill" href="https://ronenglish-archive.github.io/ron-english-paintings-2010s/paintings/2010s/2011/index.html">← Return to 2011</a>
 </nav>
 </header>
-<main class="wrapper">
-<section class="hero">
+<main class="wrapper" id="catalogue-content">
+<section class="hero" id="artwork">
 <h1>Status Faction</h1>
 <figure class="hero-card">
 <a class="painting-mat" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2FPainting-Heroes-2%2Fmain%2FRE-001083-Status-Faction.png" rel="noopener noreferrer" target="_blank">
@@ -91,61 +90,61 @@ h1,h2,h3{font-family:Georgia,serif;font-weight:400;margin:0;overflow-wrap:anywhe
 </a>
 </figure>
 <ul class="metadata" data-work-id="RE-001083">
-<li><strong>Title:</strong> Status Faction</li>
-<li><strong>Date:</strong> 2011</li>
-<li><strong>Medium:</strong> Oil, acrylic and collage on canvas</li>
-<li><strong>Dimensions:</strong> 40 × 62 inches</li>
-<li><strong>Work ID:</strong> RE-001083</li>
-<li><strong>Signature:</strong> No signature observed in available documentation.</li>
+<li class="metaitem"><strong>Title:</strong> Status Faction</li>
+<li class="metaitem"><strong>Date:</strong> 2011</li>
+<li class="metaitem"><strong>Medium:</strong> Oil, acrylic and collage on canvas</li>
+<li class="metaitem"><strong>Dimensions:</strong> 40 × 62 inches</li>
+<li class="metaitem"><strong>Work ID:</strong> RE-001083</li>
+<li class="metaitem"><strong>Signature:</strong> No signature observed in available documentation.</li>
 </ul>
 </section>
-<section class="panel">
-<h2>Exhibitions</h2>
-<p><em>Skin Deep: Post-Instinctual Afterthoughts on Psychological Portraiture</em>, Lazarides Rathbone, London, United Kingdom, June 24–July 21, 2011.</p>
-<p><em>They Would Be Kings: An Exhibition Curated by Steve Lazarides</em>, Sotheby’s Hong Kong Gallery (S|2), Hong Kong, China, March 17–26, 2016.</p>
+<section class="panel ron-pdoc-panel" data-role="exhibitions" id="exhibitions">
+<h2>Exhibitions</h2><div class="source-section-content"><p><em>Skin Deep: Post-Instinctual Afterthoughts on Psychological Portraiture</em>, Lazarides Rathbone, London, United Kingdom, June 24–July 21, 2011.</p><p><em>They Would Be Kings: An Exhibition Curated by Steve Lazarides</em>, Sotheby’s Hong Kong Gallery (S|2), Hong Kong, China, March 17–26, 2016.</p></div>
+
+
 </section>
-<section class="panel">
-<h2>Literature</h2>
-<p>Ron English, <em>Death and the Eternal Forever</em> (Korero Press, 2014), p. 113. ISBN 978-0957664920.</p>
-<p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 310. ISBN 978-2374950938.</p>
+<section class="panel ron-pdoc-panel" data-role="literature" id="literature">
+<h2>Literature</h2><div class="source-section-content"><p>Ron English, <em>Death and the Eternal Forever</em> (Korero Press, 2014), p. 113. ISBN 978-0957664920.</p><p>Ron English, <em>Original Grin: The Art of Ron English</em> (Paris: Cernunnos, 2019), p. 310. ISBN 978-2374950938.</p></div>
+
+
 </section>
-<section class="panel" id="related-works-by-ron-english"><h2>Related Works by Ron English</h2><div class="subsection"><h3>Used in the Creation of This Painting</h3><div class="related-gallery"><figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Fishbowl%20-%20original.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Fishbowl%20-%20original.jpg" alt="CB Astronaut Fishbowl"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/cb-astronaut-fishbowl.html" target="_blank" rel="noopener noreferrer">CB Astronaut Fishbowl</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Microphone%20-%20original.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Microphone%20-%20original.jpg" alt="CB Astronaut Microphone"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/cb-astronaut-microphone.html" target="_blank" rel="noopener noreferrer">CB Astronaut Microphone</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Star%20Skull%20-%20original.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Star%20Skull%20-%20original.jpg" alt="CB Astronaut Star Skull"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/cb-astronaut-star-skull.html" target="_blank" rel="noopener noreferrer">CB Astronaut Star Skull</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/camels/Camel%20Drawing%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/camels/Camel%20Drawing%20ORIGINAL.jpg" alt="Camel Drawing"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/ungulates/camels/camel-drawing/index.html" target="_blank" rel="noopener noreferrer">Camel Drawing</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2Fron-english-sketches-cereal-killers%2Fmain%2Fimages%2FSketches%2Fcereal-killers%2FSugar%2520Smack%2520portrait%2520ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-cereal-killers/main/images/Sketches/cereal-killers/Sugar%20Smack%20portrait%20ORIGINAL.jpg" alt="Sugar Smack Portrait"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-cereal-killers/Sketches/cereal-killers/sugar-smack/sugar-smack-portrait/index.html" target="_blank" rel="noopener noreferrer">Sugar Smack Portrait</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/badges-and-patches/starbucks%20(2).jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/badges-and-patches/starbucks%20(2).jpg" alt="Starbucks Mermaid Logo"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/Sketches/pop-culture-public-figures/works/re-013675.html" target="_blank" rel="noopener noreferrer">Starbucks Mermaid Logo</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/See%20Money%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/See%20Money%20ORIGINAL.jpg" alt="See Money"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/aquatic-dwellers/aqua-apes/see-money.html" target="_blank" rel="noopener noreferrer">See Money</a></span></figcaption></figure>
-<figure class="tile"><a class="tileimg" href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kaijus/Modzilla%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kaijus/Modzilla%20ORIGINAL.jpg" alt="Modzilla"></a><figcaption class="tilecaption"><span class="tilename"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/kaijus/works/re-013674.html" target="_blank" rel="noopener noreferrer">Modzilla</a></span></figcaption></figure></div></div></section>
-<section class="panel ron-pdoc-panel" data-role="cultural-artistic-references">
+<section class="panel ron-pdoc-panel" data-role="related-works-by-ron-english" id="related-works-by-ron-english"><h2>Related Works by Ron English</h2><div class="ron-related-subsection"><h3>Used in the Creation of This Painting</h3><div class="related-gallery"><figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Fishbowl%20-%20original.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="CB Astronaut Fishbowl" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Fishbowl%20-%20original.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/cb-astronaut-fishbowl.html" rel="noopener noreferrer" target="_blank">CB Astronaut Fishbowl</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Microphone%20-%20original.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="CB Astronaut Microphone" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Microphone%20-%20original.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/cb-astronaut-microphone.html" rel="noopener noreferrer" target="_blank">CB Astronaut Microphone</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Star%20Skull%20-%20original.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="CB Astronaut Star Skull" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-aliens/images/Sketches/aliens/CB%20Astronaut%20Star%20Skull%20-%20original.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-aliens/Sketches/aliens/cb-astronaut-star-skull.html" rel="noopener noreferrer" target="_blank">CB Astronaut Star Skull</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/camels/Camel%20Drawing%20ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Camel Drawing" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/Ungulates/camels/Camel%20Drawing%20ORIGINAL.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/ungulates/camels/camel-drawing/index.html" rel="noopener noreferrer" target="_blank">Camel Drawing</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/image-viewer.html?src=https%3A%2F%2Fraw.githubusercontent.com%2Fronenglish-archive%2Fron-english-sketches-cereal-killers%2Fmain%2Fimages%2FSketches%2Fcereal-killers%2FSugar%2520Smack%2520portrait%2520ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Sugar Smack Portrait" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-cereal-killers/main/images/Sketches/cereal-killers/Sugar%20Smack%20portrait%20ORIGINAL.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-cereal-killers/Sketches/cereal-killers/sugar-smack/sugar-smack-portrait/index.html" rel="noopener noreferrer" target="_blank">Sugar Smack Portrait</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/badges-and-patches/starbucks%20(2).jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Starbucks Mermaid Logo" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-objects/images/Sketches/Objects/badges-and-patches/starbucks%20(2).jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-pop-culture/Sketches/pop-culture-public-figures/works/re-013675.html" rel="noopener noreferrer" target="_blank">Starbucks Mermaid Logo</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/See%20Money%20ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="See Money" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-animals/images/Sketches/aquatic-dwellers/aqua-apes/See%20Money%20ORIGINAL.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/aquatic-dwellers/aqua-apes/see-money.html" rel="noopener noreferrer" target="_blank">See Money</a></figcaption></figure>
+<figure class="tile" data-doc-role="related-works-by-ron-english"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kaijus/Modzilla%20ORIGINAL.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Modzilla" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/images/Sketches/Kaijus/Modzilla%20ORIGINAL.jpg"/></span></a><figcaption class="tilecaption"><a href="https://ronenglish-archive.github.io/ron-english-sketches-mythic-dark/Sketches/kaijus/works/re-013674.html" rel="noopener noreferrer" target="_blank">Modzilla</a></figcaption></figure></div></div></section>
+<section class="panel ron-pdoc-panel" data-role="cultural-artistic-references" id="cultural-artistic-references">
 <h2>Cultural &amp; Artistic References</h2>
 <div class="cultural-compact">
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Flag_of_the_United_Kingdom_(3-5).svg.webp" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Flag of the United Kingdom" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Flag_of_the_United_Kingdom_(3-5).svg.webp"/></span></a><div class="tilecaption"><span class="card-title">Flag of the United Kingdom</span><span class="card-source">Public domain image.</span></div></figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/The_Rolling_Stones'_logo.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Tongue and Lips Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/The_Rolling_Stones'_logo.jpg"/></span></a><div class="tilecaption"><span class="card-title">Tongue and Lips Logo</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Tongue_and_lips_logo" rel="noopener noreferrer" target="_blank">Wikipedia</a></span></div></figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Mick-Jagger-1965b.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Mick Jagger" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Mick-Jagger-1965b.jpg"/></span></a><div class="tilecaption"><span class="card-title">Mick Jagger</span><span class="card-source">Public domain image.</span></div></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Flag_of_the_United_Kingdom_(3-5).svg.webp" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Flag of the United Kingdom" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Flag_of_the_United_Kingdom_(3-5).svg.webp"/></span></a><figcaption class="tilecaption"><span class="card-title">Flag of the United Kingdom</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/The_Rolling_Stones'_logo.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Tongue and Lips Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/The_Rolling_Stones'_logo.jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">Tongue and Lips Logo</span><span class="card-source"><a href="https://en.wikipedia.org/wiki/Tongue_and_lips_logo" rel="noopener noreferrer" target="_blank">Wikipedia</a></span></figcaption></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Mick-Jagger-1965b.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Mick Jagger" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Mick-Jagger-1965b.jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">Mick Jagger</span><span class="card-source">Public domain image.</span></figcaption></figure>
 <figure class="tile" data-doc-role="cultural-artistic-references">
 <a href="../../../../images/Paintings/Web-Documentation/Jim_Morrison.jpg" rel="noopener noreferrer" target="_blank">
 <span class="tileimg"><img alt="Jim Morrison" loading="lazy" src="../../../../images/Paintings/Web-Documentation/Jim_Morrison.jpg"/></span>
 </a>
-<div class="tilecaption">
+<figcaption class="tilecaption">
 <span class="card-title">Jim Morrison</span>
 <span class="card-source">Public domain image.</span>
-</div>
+</figcaption>
 </figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Kool-Aid.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Kool-Aid Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Kool-Aid.jpg"/></span></a><div class="tilecaption"><span class="card-title">Kool-Aid Logo</span><span class="card-source">Public domain image.</span></div></figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Open_Pack_of_Marlboro_Reds_(American).jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Marlboro Cigarettes" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Open_Pack_of_Marlboro_Reds_(American).jpg"/></span></a><div class="tilecaption"><span class="card-title">Marlboro Cigarettes</span><span class="card-source">Public domain image.</span></div></figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/7-Eleven_logo_2021.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="7-Eleven Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/7-Eleven_logo_2021.jpg"/></span></a><div class="tilecaption"><span class="card-title">7-Eleven Logo</span><span class="card-source">Public domain image.</span></div></figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/dietcoke.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Diet Coke" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/dietcoke.jpg"/></span></a><div class="tilecaption"><span class="card-title">Diet Coke</span><span class="card-source">Public domain image.</span></div></figure>
-<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/sherwinwilliams.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Sherwin-Williams Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/sherwinwilliams.jpg"/></span></a><div class="tilecaption"><span class="card-title">Sherwin-Williams Logo</span><span class="card-source">Public domain image.</span></div></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Kool-Aid.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Kool-Aid Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Kool-Aid.jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">Kool-Aid Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/Open_Pack_of_Marlboro_Reds_(American).jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Marlboro Cigarettes" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/Open_Pack_of_Marlboro_Reds_(American).jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">Marlboro Cigarettes</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/7-Eleven_logo_2021.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="7-Eleven Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/7-Eleven_logo_2021.jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">7-Eleven Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/dietcoke.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Diet Coke" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/dietcoke.jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">Diet Coke</span><span class="card-source">Public domain image.</span></figcaption></figure>
+<figure class="tile" data-doc-role="cultural-artistic-references"><a href="../../../../images/Paintings/Web-Documentation3/sherwinwilliams.jpg" rel="noopener noreferrer" target="_blank"><span class="tileimg"><img alt="Sherwin-Williams Logo" loading="lazy" src="../../../../images/Paintings/Web-Documentation3/sherwinwilliams.jpg"/></span></a><figcaption class="tilecaption"><span class="card-title">Sherwin-Williams Logo</span><span class="card-source">Public domain image.</span></figcaption></figure>
 </div>
 </section>
 <!-- WORK-SEQUENCE-NAV-START -->
-<nav aria-label="Artwork sequence navigation" class="topnav">
-<a class="pill sequence-pill prev-work" href="Slow-Moe-and-His-One-Carrot-Goldmobile.html">← Previous: Slow Moe and His One-Carrot Goldmobile</a>
-<a class="pill sequence-pill next-work" href="Sugar-Clown.html">Next: Sugar Clown →</a>
+<nav aria-label="Artwork sequence navigation" class="sequence">
+<a class="pill" href="Slow-Moe-and-His-One-Carrot-Goldmobile.html">← Previous: Slow Moe and His One-Carrot Goldmobile</a>
+<a class="pill" href="Sugar-Clown.html">Next: Sugar Clown →</a>
 </nav>
 <!-- WORK-SEQUENCE-NAV-END -->
 </main>
-<footer class="site-footer ron-published-footer-center">Published via GitHub Pages<br/>for long-term public access.</footer>
+<footer class="site-footer">Published via GitHub Pages<br/>for long-term public access.</footer>
 </body>
 </html>
